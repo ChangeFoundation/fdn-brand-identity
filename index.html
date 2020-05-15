@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
 <title>Guideline Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/png" href="//static.change.org/favicon/favicon-32x32.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css">
+        </head>
 <style>
-body,h1,h2,h3,h4,h5 {
+body{
     font-family: "Change Calibre", sans-serif;
     color: #363135;
-    }
-body {
     font-size:16px;
     }
+a {
+    color: #ec2c22;
+    text-decoration: underline;
+    cursor: pointer;
+}
+h6 {
+    font-size: 1rem;
+    font-family: "Change Calibre", sans-serif;
+    line-height: 1.25;
+    margin: 1.5em 0 .25em;
+}
+h1 {
+    font-size: 2.44140625rem;
+    line-height: 1.2288;
+    font-family: "Change Calibre", sans-serif;
+    margin: .3072em 0;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.953125rem;
+    font-weight: 400;
+    line-height: 1.408;
+    margin: 1.28em 0 .384em;
+    font-family: "Change Calibre", sans-serif;
+}
+h3 {
+    font-size: 1.5625rem;
+    line-height: 1.28;
+    margin: 2.16em 0 .4em;
+    font-family: "Change Calibre", sans-serif;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 2em 0 .4em;
+    font-family: "Change Calibre", sans-serif;
+    font-weight: 700;
+}
+h5 {
+    color: #737273;
+    font-size: 14px;
+    letter-spacing: .144em;
+    line-height: 1.09375;
+    margin: 1.875em 0 .78125em;
+    text-transform: uppercase;
+    font-family: "Change Calibre", sans-serif;
+    font-weight: 700;
+}
 .w3-half img{
     margin-bottom:-6px;
     margin-top:16px;
@@ -31,6 +84,92 @@ body {
 .w3-row-padding {
     padding: 8px 8px !important;
 }
+    .w3-outline {
+    Border: 1px solid #DBD9DB;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #363135;
+    }
+.btn-outline {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: .8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    border-radius: 5px;
+    border: 2px solid #adacad;
+    background-color: transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: initial!important;
+    transition: background .1s ease,border .1s ease;
+    cursor: pointer;
+}
+    .btn-outline:active, .btn-outline:hover {
+    border-color: #737273;
+}
+    .list-bulleted {
+    list-style-type: circle;
+}
+    .symbol-compact {
+    margin: 0;
+}.symbol {
+    font-family: Change Symbols!important;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: middle;
+    margin-right: .625em;
+    text-decoration: none;
+    text-transform: none!important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    .symbol {
+    font-family: Change Symbols!important;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: middle;
+    margin-right: .625em;
+    text-decoration: none;
+    text-transform: none!important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    blockquote {
+    margin: 1.5em 0;
+    border-left: .25rem solid #dbd9db;
+    padding: 0 1.5em;
+}
+    .rule-dashed {
+    border: none;
+    border-bottom: 1px solid #dbd9db;
+    border-bottom-style: dashed!important;
+}
+    .rule-small {
+    border: none;
+    border-bottom: 1px solid #dbd9db;
+}
+    .rule-thick {
+    border: none;
+    border-bottom: 2px solid #dbd9db;
+}
 </style>
 <body>
 
@@ -41,12 +180,12 @@ body {
     <h3 class="w3-padding-64" style="color:#fff"><b>Change.org<br>Foundation</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#logo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logo</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Color</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Typography</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Iconography</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photography</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tone of voice</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="#logo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logo guide</a> 
+    <a href="#fonts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Fonts &amp; icons</a> 
+    <a href="#colors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Colors</a> 
+    <a href="#writing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Writing guide</a> 
+    <a href="#voice" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Voice and tone</a> 
   </div>
 </nav>
 
@@ -65,19 +204,38 @@ body {
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Style Guide</b></h1>
-  </div>
+    <!-- Header title -->
+  <div class="w3-row-padding" style="margin-top:80px" id="about">
+    <h1 class="w3-jumbo"><b>Our brand identity</b></h1>
+    </div>
+  
+    <!-- Header boxes -->
+  <div class="w3-container" style="margin-top:20px" id="">
+      <div class="w3-outline" style="margin-bottom: 20px;">
+        <div class="w3-container" style="padding: 10px 30px;">
+          <h5>What is The Change.org Foundation?</h5>
+          <blockquote>Change.org is the world’s largest social change platform with over 200 million users in 196 countries. Change.org empowers anyone, anywhere, to create the change they want to see. On Change.org, people everywhere are starting campaigns, mobilizing supporters, and working with decision makers to drive solutions.</blockquote>
+          <h5>Our mission and vision:</h5>
+          <blockquote>Change.org’s <strong>mission</strong> is to empower people everywhere to create the change they want to see in the world.</blockquote>        
+          <h5>Our mission and vision:</h5> 
+          <blockquote>Our <strong>vision</strong> is a world where no one is powerless and creating change is part of everyday life.</blockquote>   
+          <h5>Our history:</h5>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote> 
+        </div>
+    </div>
+            <img src="img/brand_wheel.png" style="width:100%" onclick="onClick(this)" alt="Petition delivery box">
+      <a href="https://elementthree.com/blog/defining-brand-creating-brand-wheel/">reference</a>
+    </div>
     
   <!-- Section Logo -->
-  <div class="w3-container" style="margin-top:80px" id="logo">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Logo.</b></h1>
+  <div class="w3-container" style="margin-top:20px" id="logo">
+    <h1 style="color: red"><b>Logo guide.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-      <a href="">Download Logo file.</a>
+  <h5 style="font-size: 14px">How to use our logo?</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    </p>
+    </p>   
   </div>
+    
     <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
@@ -88,9 +246,13 @@ body {
     </div>
   </div>
     
+    <div class="w3-container" style="margin-top:20px" id="">
+              <button class="btn-outline">Download all logo files (zip)</button>
+  </div>
+
     <!-- do's and don'ts -->
     <div class="w3-container" style="margin-top:20px" id="logo">
-    <p>Wrong ways of using the Logo.</p>
+    <h5 style="font-size: 14px">Wrong ways of using the Logo.</h5>
   </div>
   <div class="w3-row-padding">
     <div class="w3-col m4 w3-margin-bottom">
@@ -112,22 +274,6 @@ body {
     </div>
   </div>
 
-
-  <!-- Photo grid (modal) -->
-  <!--<div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-
-    <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2019/02/Copy-of-IMG_0814.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>-->
-
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -137,19 +283,111 @@ body {
     </div>
   </div>
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+      
+    <!-- Design: Section Typography -->
+<hr class="rule-dashed">
+
+  <div class="w3-container" style="margin-top:20px" id="fonts">
+        <h1 style="color: red">Fonts &amp; icons.</h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <img src="img/typography.webp" style="width:100%" onclick="onClick(this)" alt="Petition delivery box"> 
+    <p>Consistent typography helps to center Change.org's visual identity. We use one font called Change Calibre for all materials.</p>
+    <button class="btn-outline">Download all font files (zip)</button>
   </div>
-  
+    
+    <!-- Design: Section color -->
+    <hr class="rule-dashed">
+
+  <div class="w3-container" style="margin-top:20px" id="colors">
+        <h1 style="color: red">Colors</h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>lorem.</p>
+  </div>
+    
+  <!-- writing principles -->
+    <hr class="rule-dashed">
+
+  <div class="w3-container" id="writing" style="margin-top:40px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Writing guide.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Words are powerful tools that reflect our brand in the product as well as in external communication. The grammar and style rules here were developed with American English in mind. Other countries should try to adhere to similar, unified principles, but should feel free to adapt to languages and dialects as needed.</p>
+    <h5 style="font-size: 14px">Key writing principles</h5>
+    <ul class="list-bulleted">
+       <li>Paragraphs should be broken down into short, scannable chunks, ideally no more than three sentences.</li>
+       <li>Use bullet points, when applicable.</li>
+       <li>Don’t use jargon or acronyms that people won’t understand.</li>
+       <li>Focus on the message you’re wanting to communicate.</li>
+       <li>Consider the audience you’re writing for and what their needs are.</li>
+       <li>Cut out any extraneous information that isn’t needed to understand your core message.</li>   
+    </ul>  
+      
+      <h5 style="font-size: 14px">Presentation tips</h5>
+       <p><strong>Tell a story:</strong> Think about your main message, structure, and its supporting points first, then create your slides using that story as the outline. A strong, focused message will help prevent your presentation from veering off into complex, superfluous topics.</p>
+       <p><strong>With text, less is more:</strong> If there are a lot of words on a slide, you’re asking your audience to split their attention between what they’re reading and what they’re hearing or comprehending. What content will add clarity to your argument without complicating the message?</p>
+       <p><strong>One idea per slide:</strong> tell your story over several slides instead of cramming everything onto a few slides. Ask yourself: what are the main points you wish to make? Are these points structured in a logical, coherent way?</p>
+   
+      
+      <h5 style="font-size: 14px">Petition deliveries</h5>
+      <p><strong>What is a petition delivery?</strong> Lorem</p>
+      <p><strong>Petition delivery box set:</strong> It’s important to make a visually impactful presence for your delivery, which is hard to do with just one sheet of paper. We created a set of templates for you that utilizes every side of the box. Turn your box to a particular side to make your statement stand out. These templates come in A4 and letter sizes.</p>
+      <img src="img/pet-delivery.jpg" style="width:100%" onclick="onClick(this)" alt="Petition delivery box">
+      <p><strong>Petition delivery poster set:</strong> Lorem.</p>
+      <img src="img/pet-delivery2.jpg" style="width:100%" onclick="onClick(this)" alt="Petition delivery box">
+      <p><strong>Petition delivery banner set:</strong> Lorem.</p>
+      <img src="img/pet-delivery3.jpg" style="width:100%" onclick="onClick(this)" alt="Petition delivery box">      
+    
+  </div>
+    
+    <!-- Voice and tone -->
+    <hr class="rule-dashed">
+
+  <div class="w3-container" id="voice" style="margin-top: 40px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Voice and tone</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h3>Our voice is <strong>open</strong></h3>
+    <p>We provide a platform for people who want to change issues they care about, regardless of background or ideology. Write with a voice that’s neutral and wouldn’t alienate people with differing perspectives.</p> 
+      
+    <h3>Our voice is <strong>suportive</strong></h3>
+    <p>Building an effective campaign can often feel like an overwhelming and emotional process. Write with a voice that’s clear, helpful, and offers guidance without being prescriptive.</p> 
+      
+    <h3>Our voice is <strong>empowering</strong></h3>
+    <p>No matter how passionate a person is about an issue, it can be difficult to actually change something. Write with a voice that motivates people and encourages them to keep pushing forward, while respecting the gravity of their cause.</p> 
+      
+    <div class="w3-outline" style="margin-top: 40px;">
+        <div class="w3-container" style="padding: 10px 30px;">
+          <p>The tone fluctuates depending on what’s being communicated and how the message is delivered. For example, the tone should be warm and friendly when we’re welcoming people to Change.org, but serious and straightforward when entering credit card information or when encountering a site error.</p>
+        </div>
+    </div>    
+  </div>
+    
+      <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Visual Tone</li>
+        <li>Creative</li>
+        <li>Positive</li>
+        <li>Enthusiastic</li>
+        <li>Confident</li>
+        <li>Collaborative</li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Verbal Tone</li>
+        <li>Direct and to-the-point</li>
+        <li>Passionate</li>
+        <li>Intelligent/informed</li>
+        <li>Conversational</li>
+        <li>Confident</li>
+      </ul>
+    </div>
+  </div>
+    
   <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
+  <div class="w3-container" id="designers" style="margin-top:40px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>The best team in the world.</p>
