@@ -203,6 +203,48 @@ h5 {
 	position: relative;
 	width: 100%;
 }
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #CCE5FF; /* whiteblue */
+  color: #2F5494;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 7px
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: #ED2D23;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.alert-attached {
+  padding: 20px 40px;
+  background-color: #CCE5FF;
+  color: #2F5494;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px
+}
+.alert-outlined {
+  padding: 20px 40px;
+  background-color: #fff; 
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 4px solid #F0AD4E;
+  color: #363135;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 3px
+}
 
 </style>
 <body>
@@ -238,34 +280,67 @@ h5 {
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 
-    <!-- Header title -->
+    <!-- Header section -->
     
-    <div class="w3-row-padding" style="border-radius: 15px; background-color: #F6F4F6; margin-top: 30px !important;">
+    <div class="w3-row-padding" style="border-top-right-radius: 15px; border-top-left-radius: 15px; background-color: #F6F4F6; margin-top: 30px !important;">
     <div class="w3-half">
-    <h1 class="w3-jumbo" style="padding: 10%"><b>Our brand identity</b></h1>
+    <h1 class="w3-jumbo" style="padding: 10% 5%;"><b>Building the Foundation brand.</b></h1>
     </div>
       <div class="w3-half" style="text-align: center;">
     <img src="img/team.png" style="width: 80%; opacity: 1!important;cursor: auto !important" alt="">
     </div>
   </div>
+<!--<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    If you need specific help on how to use our brand write to us at mail @
+</div>-->
+    <div class="alert-attached">
+These guidelines provide you with everything you need to create materials for the Change.org Foundation brand.</div>
     
-    <!-- Header boxes -->
-  <div class="w3-container" style="margin-top:20px" id="">
-      <div class="w3-outline" style="margin-bottom: 20px;">
-        <div class="w3-container" style="padding: 10px 30px;">
-          <h5>What is The Change.org Foundation?</h5>
-          <blockquote>Change.org is the world’s largest social change platform with over 200 million users in 196 countries. Change.org empowers anyone, anywhere, to create the change they want to see. On Change.org, people everywhere are starting campaigns, mobilizing supporters, and working with decision makers to drive solutions.</blockquote>
-          <h5>Our mission and vision:</h5>
-          <blockquote>Change.org’s <strong>mission</strong> is to empower people everywhere to create the change they want to see in the world.</blockquote>        
-          <h5>Our mission and vision:</h5> 
-          <blockquote>Our <strong>vision</strong> is a world where no one is powerless and creating change is part of everyday life.</blockquote>   
-          <h5>Our history:</h5>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote> 
-        </div>
-    </div>
-            <img src="img/brand_wheel.png" style="width:100%" onclick="onClick(this)" alt="Petition delivery box">
-      <a href="https://elementthree.com/blog/defining-brand-creating-brand-wheel/">reference</a>
-    </div>
+    <div class="alert-outlined">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/" target="_blank" >Change.org brand writing guide</a> when promoting day-to-day platform activities. The voice and tone below applies to channels we specifically talk about the Change.org Foundation.</div>
+    
+<!-- About Us section -->
+  <div class="w3-container" style="margin-top:20px" id="about">
+    <h1 style="color: red"><b>About us.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <h5 style="font-size: 14px">What is the Foundation</h5>
+    <blockquote><p>The Change.org Foundation is a global non-profit operating in a diverse set of countries with very different realities, spanning Latin America, Asia, Europe, and soon, Africa. </p> 
+    <p>
+    In many of these countries, democracy is broken -- people in power are not accountable to the people whose lives they impact. We want there to be a world where decision-making spaces are open, so that people can fully participate in holding the powerful to account.</p>
+    <p>
+    We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.</p> 
+    <p><strong>2-line description</strong></p> 
+    <p>The Change.org Foundation is a global non-profit that leverages the global Change.org platform in 11 countries, combining it with highly localized programs, analytics intelligence and technology for collective action.</p> 
+    <p><strong>Elevator speech </strong> <br>The Change.org Foundation is a global non-profit operating in a diverse set of countries with very different realities, spanning Latin America, Asia, Europe, and soon, Africa.
+    </p>
+    <p>In many of these countries, democracy is broken -- people in power are not accountable to the people whose lives they impact. We want there to be a world where decision-making spaces are open, so that people can fully participate in holding the powerful to account.
+    </p>
+    <p>We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs, analytics intelligence and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.
+    </p>
+      </blockquote>
+  <h5 style="font-size: 14px">Mission</h5>
+    <blockquote>
+      <p>We share a mission with the Change.org family: empower people everywhere to create the change they want to see. 
+    </p>  
+      </blockquote>
+      
+  <h5 style="font-size: 14px">Vision</h5>
+    <blockquote>
+      <p>By the end of 2021, the Foundation will serve users across four continents as a sustainable, resilient, and unified global organization. Every country operation will be sustained by users who deeply believe in the power of Change.org campaigns and citizen-led collective action and we partner with mission-aligned funders to deliver high-impact, relevant local programs.
+    </p> 
+    <p>As a network of countries facing diverse realities, our strategies and systems balance local flexibility and entrepreneurialism with a shared commitment to building the most globally recognizable and powerful social change brand in the world. Our culture celebrates both diversity and global solidarity; we exercise servant leadership at every level; and we build our organization in a way that honors the courage and tenacity of our users, members, and partners working on the frontlines of social change.
+    </p>   
+      <a href="https://docs.google.com/document/d/1Dm9PPv08m41CJeD4Vgl6estz98VaG2hf0HECDk_4aKw/edit#" target="_blank"><button class="btn-outline">Foundation Strategy 2020</button></a>
+    </blockquote>
+      
+      <h5 style="font-size: 14px">Principles</h5>
+    <blockquote>
+      <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work.
+    </p> 
+      </blockquote>
+  </div>
     
   <!-- Section Logo -->
   <div class="w3-container" style="margin-top:20px" id="logo">
@@ -564,6 +639,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
 </script>
 
 </body>
