@@ -111,6 +111,21 @@ h5 {
     .btn-outline:active, .btn-outline:hover {
     border-color: #737273;
 }
+    .select-dropdown {
+
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1;
+    border-radius: 5px;
+    border: 2px solid #adacad;
+    background-color: transparent;
+    cursor: pointer;
+    width:80%;
+    height: 35px;
+}
     .list-bulleted {
     list-style-type: circle;
 }
@@ -353,11 +368,30 @@ These guidelines provide you with everything you need to create materials for th
       <a href="https://docs.google.com/document/d/1Dm9PPv08m41CJeD4Vgl6estz98VaG2hf0HECDk_4aKw/edit#" target="_blank"><button class="btn-outline">Foundation Strategy 2020</button></a>
     </blockquote>
 
+      <h5 style="font-size: 14px">Principles</h5>
+    <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work. </p> 
+      
+      <strong><p>We have a grassroots mindset.</p></strong>
+<p>Our internal decisions and strategies are based on deep listening of our staff and users' experience. All of the Foundation's work is focussed on serving the realisation of the mission in our countries and our external projects are true collaborations with users and partners.</p>
+
+<strong><p>We thrive together.</p></strong>
+<p>We believe in our collective impact working together as a Foundation. We actively support each other in our learning. We ask questions that go beyond the platform and we make time to reflect and share with our colleagues.</p>
+
+<strong><p>We are free to create.</p></strong>
+<p>Fostering new ideas for empowering our users and petition starters is an everyday challenge that every member of staff owns. We are free to decide our strategies and we will be supported to try new things, learning from failures as well as successes.</p>
+
+<strong><p>We are diverse, inclusive and transparent</p></strong>
+<p>We celebrate the diversity of our countries, staff and users in the Foundation. We are all building an empowering place to work, so all Foundation staff will be involved in the decisions that affect them. Our users and colleagues know who we are and what we are working on, because we are proactive and transparent in our communications.</p>
+
+    <strong><p>We are impact-driven</p></strong>
+<p>As a non-profit, we will always prioritise maximising impact. Wherever possible, we design our work so that the products and value it creates are free, open and commons-based, creating a shared environment for social good.</p>
+<a href="https://drive.google.com/file/d/0BylFLp45Gv6Oc05ZeGl2dFdIQUN3TlRUZ044cmtkUm1TMGVz/view?usp=sharing" target="_blank"><button class="btn-outline">Foundation Principles Poster</button></a>
+    
   </div>
     
   <!-- Section Logo -->
   <div class="w3-container" style="margin-top:20px" id="logo">
-    <h1 style="color: red"><b>Logo guide.</b></h1>
+    <h1 style="color: red"><b>Logo &amp; Design.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   <h5 style="font-size: 14px">How to use our logo?</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -378,7 +412,26 @@ These guidelines provide you with everything you need to create materials for th
               <button class="btn-outline">Download all logo files (zip)</button>
   </div>
 
-    <!-- do's and don'ts -->
+<div class="w3-container" style="margin-top:20px" id="logo">
+    <h5 style="font-size: 14px">Choose your logo</h5>
+  </div>
+    
+      <div class="w3-row-padding">
+    <div class="w3-half">
+ <select type="text" id="dropBox" onchange="changeSelect()" class="select-dropdown">
+    <option value="1">Select country</option>
+    <option value="2">Glogal Foundation</option>
+    <option value="3">Brazil</option>
+    <option value="4">India</option>
+</select>
+    </div>
+      <div>
+      <div id="divText">&#x2190; Select the country logos you want to download from the dropdown.</div>
+    </div>
+  </div>
+    
+    
+        <!-- do's and don'ts -->
     <div class="w3-container" style="margin-top:20px" id="logo">
     <h5 style="font-size: 14px">Wrong ways of using the Logo.</h5>
   </div>
@@ -393,15 +446,16 @@ These guidelines provide you with everything you need to create materials for th
       <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
     </div>
   </div>
-      <div class="w3-row-padding">
-    <div class="w3-col m4 w3-margin-bottom">
-<img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
-    </div>
-  </div>
 
+    
+        <div class="w3-container" style="margin-top:20px" id="logo">
+    <h5 style="font-size: 14px">Colors</h5>
+  </div>
+            <div class="w3-container" style="margin-top:20px" id="logo">
+    <h5 style="font-size: 14px">Fonts &amp; Icons</h5>
+  </div>
+    
+    
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -651,6 +705,19 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+    
+// country logo dropdown 
+    function changeSelect() {
+    if (document.getElementById("dropBox").value == "1") {
+        document.getElementById("divText").innerHTML = "<a href=\"img/ar-logo.zip\" download=\"Foundation-logo.png\" target=\"_blank\"><img src=\"img/logo-foundation.png\" width=\"400px\" height=\"auto\"></a>";
+    } else if (document.getElementById("dropBox").value == "2") {
+        document.getElementById("divText").innerHTML = "<a href=\"img/ar-logo.zip\" download=\"Filename.png\" target=\"_blank\"><img src=\"img/logo-foundation.png\" width=\"400px\" height=\"auto\"></a>";
+    } else if (document.getElementById("dropBox").value == "3") {
+        document.getElementById("divText").innerHTML = "<img src=\"img/Foundation-logotype_br.png\" width=\"400px\" height=\"auto\">";
+    } else if (document.getElementById("dropBox").value == "4") {
+        document.getElementById("divText").innerHTML = "NOTE [DATE] ...";
+    }
 }
 
 </script>
