@@ -337,8 +337,8 @@ h5 {
     .modal-header .close{margin-top:-2px}
     .modal-title{margin:0;line-height:1.42857143}
     .modal-body{position:relative;padding:15px}
-    .modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}
-    .modal-footer .btn+.btn{margin-bottom:0;margin-left:5px}
+    .modal-footer{padding:15px;text-align:center;border-top:none}
+    .modal-footer .btn+.btn{margin-bottom:0;margin-left:5px; margin-right:5px;}
     .modal-footer .btn-group .btn+.btn{margin-left:-1px}
     .modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}
         .modal-content{-webkit-box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2);box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2)}
@@ -381,6 +381,17 @@ h5 {
     display: table-cell;
     padding: 16px;
 }
+    @media only screen and (max-width: 768px) {
+.mobile-half {
+    width: 50%;
+}
+        }
+.color-card {
+    border: 1px solid #DBD9DB; 
+    padding: 1px 20px 20px 20px; 
+    background-color: #fff; 
+    Border-radius: 10px;
+    }
     
 </style>
 <body>
@@ -524,21 +535,10 @@ These guidelines provide you with everything you need to create materials for th
     </p>   
   </div>
     
-    <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
-    </div>
-      <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo2.png" style="width:100%;  border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Logo construction">
-    </div>
-  </div>
-    
-<!-- Modal section -->
+    <!-- Modal section -->
 <div class="w3-container" style="margin-top:20px" id="logo">
-    <h5 style="font-size: 14px">Choose your logo</h5>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn-outline" data-toggle="modal" data-target="#myModal">Download logo files</button>
+  <button type="button" class="btn-outline" data-toggle="modal" data-target="#myModal">Download Foundation logo files</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -554,7 +554,8 @@ These guidelines provide you with everything you need to create materials for th
           <p>Download <a href="img/Country-logos.zip" download="Foundation-logo.png">all country logos</a></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn-outline" data-dismiss="modal">Close</button>
+          <a href="img/Country-logos.zip" download="Foundation-logo.png"><button type="button" class="btn-outline" style="width: 30%">Yes, download</button></a>&nbsp;
+          <button type="button" class="btn-outline" data-dismiss="modal" style="width: 30%">Close</button>
         </div>
       </div>
       
@@ -563,29 +564,228 @@ These guidelines provide you with everything you need to create materials for th
   
 </div>
     
+    <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
+    </div>
+      <div class="w3-half">
+      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo2.png" style="width:100%;  border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Logo construction">
+    </div>
+  </div>
+    
+    <!-- 3 columnns logo images -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+<img src="img/logo-usage-1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="If you need to use the logo in dark background use it in white."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">If you need to use the logo in dark background use it in white.</p>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <img src="img/logo-usage-2%20copia.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="The logo should always be used in Change.org red."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">The logo should always be used in Change.org red.</p>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <img src="img/logo-usage-3.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="The “C” and the first letter of the country name is always capitalized."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">The “C” and the first letter of the country name is always capitalized.</p>
+    </div>
+  </div>
+<hr class="rule-dashed">
         <!-- do's and don'ts -->
     <div class="w3-container" style="margin-top:20px" id="logo">
     <h5 style="font-size: 14px">Wrong ways of using the Logo.</h5>
   </div>
-  <div class="w3-row-padding">
-    <div class="w3-col m4 w3-margin-bottom">
-<img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
+  <div class="w3-row-padding"  style="padding: 0px 8px !important;">
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+<img src="img/wrong-logo1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+      <img src="img/wrong-logo2.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/donts1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+      <img src="img/wrong-logo3.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+    </div>
+      </div>
+      <div class="w3-row-padding" style="padding: 0px 8px !important;">
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+<img src="img/wrong-logo4.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+      <img src="img/wrong-logo5.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
+      <img src="img/wrong-logo6.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
     </div>
   </div>
 
-    
-        <div class="w3-container" style="margin-top:20px" id="logo">
-    <h5 style="font-size: 14px">Colors</h5>
+   <hr class="rule-dashed">
+ 
+        <div class="w3-container" style="margin-top:20px" id="color">
+      <h5 style="font-size: 14px">Change.org Foundation color palette.</h5>
+    <p>We share the colors of the Change.org PBC platform trying to minimize design friction on users who transit sites or products of the foundation. 
+    </p></div>
+            <div class="w3-container" style="margin-top:20px">
+    <a href="img/Change.org%20-%20Brand%20colors.pdf" download="Foundation-logo.png" target="_blank"><button type="button" class="btn-outline" style="width: 30%">Download the color palette guide</button></a>
   </div>
+          <div class="w3-row-padding" style="margin-top: 20px">  
+    <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #ED2D23;">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Brand Red</p>
+         <p id="p1" style="color: #363135">#ED2D23</p>  
+         <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+        <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #cb2e26">
+       <div>
+           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Red on hover</p>
+         <p id="p2" style="color: #363135">#cb2e26</p>  
+         <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #363135">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Black</p>
+         <p id="p3" style="color: #363135">#363135</p>  
+         <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #737273">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray</p>
+         <p id="p4" style="color: #363135">#737273</p>  
+         <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+  </div>
+    
+    <div class="w3-row-padding">  
+    <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #ADACAD">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Medium gray</p>
+         <p id="p5" style="color: #363135">#ADACAD</p>  
+         <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #DBD9DB">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Light gray</p>
+         <p id="p6" style="color: #363135">#DBD9DB</p>  
+         <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #F6F4F6">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Platinum</p>
+         <p id="p7" style="color: #363135">#F6F4F6</p>  
+         <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #F0F4FA">
+       <div>
+           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Solid bg</p>
+         <p id="p8" style="color: #363135">#F0F4FA</p>  
+         <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+  </div>
+    
+    <div class="w3-row-padding">  
+    <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #7f6234">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow text</p>
+         <p id="p9" style="color: #363135">#7f6234</p>  
+         <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #FFE9AA">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow button</p>
+         <p id="p10" style="color: #363135">#FFE9AA</p>  
+         <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #F9E3A5">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow hover</p>
+         <p id="p11" style="color: #363135">#F9E3A5</p>  
+         <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #FFF9DF">
+       <div>
+           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow bg</p>
+         <p id="p12" style="color: #363135">#FFF9DF</p>  
+         <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+  </div>
+    
+    <div class="w3-row-padding">  
+    <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #2F5494">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box text</p>
+         <p id="p13" style="color: #363135">#2F5494</p>  
+         <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #CCE5FF">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box bg</p>
+         <p id="p14" style="color: #363135">#CCE5FF</p>  
+         <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #3b5998">
+       <div>
+         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Facebook</p>
+         <p id="p15" style="color: #363135">#3b5998</p>  
+         <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>
+              <div class="w3-quarter m4 w3-margin-bottom mobile-half">
+        <div class="color-card" style="border-top: 30px solid #00acee">
+       <div>
+           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Twitter</p>
+         <p id="p16" style="color: #363135">#00acee</p>  
+         <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+       </div>
+    </div>
+        </div>    
+  </div>
+    
+   <hr class="rule-dashed">
+ 
             <div class="w3-container" style="margin-top:20px" id="logo">
     <h5 style="font-size: 14px">Fonts &amp; Icons</h5>
   </div>
+     <img src="img/Icon_arrow_right.svg" style="width:10%" onclick="onClick(this)" alt="Petition delivery box">
+         <img src="img/Icon_arrow_right.svg" style="width:10%" onclick="onClick(this)" alt="Petition delivery box">
     
     
   <!-- Modal for full size images on click-->
@@ -754,9 +954,23 @@ function onClick(element) {
         document.getElementById("divText").innerHTML = "NOTE [DATE] ...";
     }
 }
+  
+// copy to clipboard button function
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+// change button text at click
+function changeText(button, text, textToChangeBackTo) {
+      buttonId = document.getElementById(button);
+      buttonId.textContent = text;
+      setTimeout(function() { document.getElementById(button).textContent = textToChangeBackTo; }, 1000);
+    }
     
-
-
 </script>
 
 </body>
