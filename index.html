@@ -113,24 +113,44 @@ h5 {
     cursor: pointer;
     height: 44px;
     color: #363135;
+    margin-bottom: 10px;
 }
     .btn-outline:active, .btn-outline:hover {
     border-color: #737273;
 }
-    .select-dropdown {
-
+    
+@media screen and (max-width: 600px) {
+  .btn-outline {
+    width: 100%;
+  }
+}
+.select-dropdown {
     text-decoration: none;
     padding: 8px 16px;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     text-align: left;
-    line-height: 1;
+    line-height: 19px;
     border-radius: 5px;
-    border: 2px solid #adacad;
+    border: 2px solid #DBD9DB;
     background-color: transparent;
     cursor: pointer;
     width:80%;
-    height: 35px;
+    height: 44px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
 }
     .list-bulleted {
     list-style-type: circle;
@@ -251,7 +271,7 @@ h5 {
   color: #2F5494;
   margin-bottom: 15px;
   border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px
+  border-bottom-left-radius: 15px;
 }
 .alert-outlined {
   padding: 20px 40px;
@@ -546,9 +566,6 @@ h5 {
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    
-    
-    
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
@@ -570,6 +587,7 @@ h5 {
     <div class="alert-attached">
 These guidelines provide you with everything you need to create materials for the Change.org Foundation brand.</div>
     
+      <div class="w3-container" style="margin-top:20px" id="about">
     <div class="alert-outlined">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/" target="_blank" >Change.org brand writing guide</a> when promoting day-to-day platform activities. The voice and tone below applies to channels we specifically talk about the Change.org Foundation.</div>
@@ -646,7 +664,15 @@ These guidelines provide you with everything you need to create materials for th
     <option value="1">Global metrics</option>
     <option value="2">Argentina</option>
     <option value="3">Brazil</option>
+    <option value="4">Chile</option>
+    <option value="4">Colombia</option>
+    <option value="4">Germany</option>
     <option value="4">India</option>
+    <option value="4">Indonesia</option>
+    <option value="4">Japan</option>
+    <option value="4">Mexico</option>
+    <option value="4">Thailand</option>
+    <option value="4">Turkey</option>
    </select>
 
       <div id="divText">
@@ -787,7 +813,7 @@ These guidelines provide you with everything you need to create materials for th
              <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
            </p>
          <p id="p1" style="color: #363135">#ED2D23</p>  
-         <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -796,7 +822,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
            <p class="tooltip"  style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Red on hover</p>
          <p id="p2" style="color: #363135">#cb2e26</p>  
-         <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -805,7 +831,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Black</p>
          <p id="p3" style="color: #363135">#363135</p>  
-         <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -815,7 +841,7 @@ These guidelines provide you with everything you need to create materials for th
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray
          <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span></p>
          <p id="p4" style="color: #363135">#737273</p>  
-         <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -827,7 +853,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Medium gray</p>
          <p id="p5" style="color: #363135">#ADACAD</p>  
-         <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -836,7 +862,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Light gray</p>
          <p id="p6" style="color: #363135">#DBD9DB</p>  
-         <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -845,7 +871,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Platinum</p>
          <p id="p7" style="color: #363135">#F6F4F6</p>  
-         <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -854,7 +880,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Solid bg</p>
          <p id="p8" style="color: #363135">#F0F4FA</p>  
-         <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -866,7 +892,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow text</p>
          <p id="p9" style="color: #363135">#7f6234</p>  
-         <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -875,7 +901,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow button</p>
          <p id="p10" style="color: #363135">#FFE9AA</p>  
-         <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -884,7 +910,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow hover</p>
          <p id="p11" style="color: #363135">#F9E3A5</p>  
-         <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -893,7 +919,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow bg</p>
          <p id="p12" style="color: #363135">#FFF9DF</p>  
-         <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -905,7 +931,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box text</p>
          <p id="p13" style="color: #363135">#2F5494</p>  
-         <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -914,7 +940,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box bg</p>
          <p id="p14" style="color: #363135">#CCE5FF</p>  
-         <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -923,7 +949,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Facebook</p>
          <p id="p15" style="color: #363135">#3b5998</p>  
-         <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>
@@ -932,7 +958,7 @@ These guidelines provide you with everything you need to create materials for th
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Twitter</p>
          <p id="p16" style="color: #363135">#00acee</p>  
-         <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
+         <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%">Copy code</button>
        </div>
     </div>
         </div>    
@@ -1165,7 +1191,7 @@ function onClick(element) {
 // country users number dropdown 
     function changeSelect() {
     if (document.getElementById("dropBox").value == "1") {
-        document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in all countries</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table><iframe src=\"https://redash.staging.changeeng.org/embed/query/5212/visualization/8117?api_key=IE6dDNwn0fyFrOKodMICv9nWGllVGYmkr0BL6NOs\" width=\"720\" height=\"391\"></iframe>";
+        document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in all countries</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table>";
     } else if (document.getElementById("dropBox").value == "2") {
         document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in Argentina</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table>"
     } else if (document.getElementById("dropBox").value == "3") {
