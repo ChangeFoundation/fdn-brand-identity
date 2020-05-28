@@ -15,6 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </head>
 <style>
+*:focus {outline:none !important}
 body{
     font-family: "Change Calibre", sans-serif;
     color: #363135;
@@ -475,15 +476,16 @@ h5 {
   }
 }
 /*principles grid css - end*/
+
 </style>
 <body>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-<!--  <img class="w3-padding-64" src="img/Foundation-logotype_white%20(1).png" style="width: 100%; opacity: 1!important;cursor: auto !important" alt="">-->
-    <h3 class="w3-padding-64" style="color:#fff"><b>Change.org<br>Foundation</b></h3>
+  <div class="w3-bar-block">
+  <img class="w3-padding-64" src="img/badge-transparent.png" style="width: 80%;" alt="Change.org Foundation">
+<!--    <h3 class="w3-padding-64" style="color:#fff"><b>Change.org<br>Foundation</b></h3>-->
   </div>
   <div class="w3-bar-block">
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
@@ -496,7 +498,7 @@ h5 {
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Change.org Foundation</span>
+  <img src="img/logo-fdn-w.png" style="width: 200px; color: #fff" alt="Change.org Foundation" >
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -581,13 +583,12 @@ These guidelines provide you with everything you need to create materials for th
       </div>
         <div class="w3-container" style="margin-top:20px" id="">      
        <a href="https://docs.google.com/document/d/1Dm9PPv08m41CJeD4Vgl6estz98VaG2hf0HECDk_4aKw/edit#" target="_blank"><button class="btn-outline">Foundation Strategy 2020</button></a>
-    </div>
+  
       
     <!--metrics: Modal section -->
-<div class="w3-container" style="margin-top:20px" id="">
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn-outline" data-toggle="modal" data-target="#myModal">See foundation country metrics</button>
-
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -605,10 +606,13 @@ These guidelines provide you with everything you need to create materials for th
     <option value="3">Brazil</option>
     <option value="4">India</option>
    </select>
+
       <div id="divText">
             <table style="height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;" width="100%"><tbody><tr><td style="width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;"><h4>Users in all countries</h4><p>00.000.000</p></td><td style="width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style="width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;"><h4>Victories</h4><p>000.000</p></td><td style="width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;"><h4>DM responses</h4><p>000</p></td></tr></tbody></table>
-            
       </div>
+            <div style="padding: 10px 20px">
+            <p style="text-align: center; font-size: 10px; text-transform: uppercase;  font-weight: bold; color: gray; letter-spacing: 2px;">Last update made in May 2020</p>
+            <p style="text-align: center; font-size: 14px;">Need more info? Check out the <a href="https://redash.staging.changeeng.org/dashboard/foundation-health-indicators?p_country=Global%20Foundation&p_display=Yes&p_Timeframe=Week&p_Source=All%20non-carousel%20signatures&p_splitsource=Yes" target="_blank">Foundation Health Indicators.</a></p></div>
     
         </div>
         <div class="modal-footer">
@@ -618,8 +622,7 @@ These guidelines provide you with everything you need to create materials for th
       
     </div>
   </div>
-  
-</div>     
+     
       
       <!-- Principles section -->
   <div class="w3-container" style="margin-top:40px" id="">
@@ -699,7 +702,7 @@ These guidelines provide you with everything you need to create materials for th
   </div>
 <hr class="rule-dashed">
         <!-- do's and don'ts -->
-    <div class="w3-container" style="margin-top:20px" id="logo">
+    <div class="w3-container" style="margin-top:20px" id="">
     <h5 style="font-size: 14px">Wrong ways of using the Logo.</h5>
   </div>
   <div class="w3-row-padding"  style="padding: 0px 8px !important;">
@@ -1117,7 +1120,7 @@ function onClick(element) {
 // country users number dropdown 
     function changeSelect() {
     if (document.getElementById("dropBox").value == "1") {
-        document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in all countries</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table>";
+        document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in all countries</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table><iframe src=\"https://redash.staging.changeeng.org/embed/query/5212/visualization/8117?api_key=IE6dDNwn0fyFrOKodMICv9nWGllVGYmkr0BL6NOs\" width=\"720\" height=\"391\"></iframe>";
     } else if (document.getElementById("dropBox").value == "2") {
         document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users in Argentina</h4><p>00.000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><p>00.000.000</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><p>000.000</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>DM responses</h4><p>000</p></td></tr></tbody></table>"
     } else if (document.getElementById("dropBox").value == "3") {
