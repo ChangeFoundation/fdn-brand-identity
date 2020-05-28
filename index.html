@@ -100,10 +100,10 @@ h5 {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
-    line-height: 1;
+    line-height: 19px;
     border-radius: 5px;
     border: 2px solid #DBD9DB;
     background-color: transparent;
@@ -111,6 +111,8 @@ h5 {
     -webkit-appearance: initial!important;
     transition: background .1s ease,border .1s ease;
     cursor: pointer;
+    height: 44px;
+    color: #363135;
 }
     .btn-outline:active, .btn-outline:hover {
     border-color: #737273;
@@ -479,9 +481,9 @@ h5 {
 /*Tooltip css*/
 .tooltip {
   position: relative;
-/*  display: inline-block;*/
-  display: table;
-  border-bottom: 1px dotted black;
+  display: inline-block;
+/*  border-bottom: 1px dotted black;*/
+  border-bottom: none;
 }
 
 .tooltip .tooltiptext {
@@ -792,7 +794,7 @@ These guidelines provide you with everything you need to create materials for th
         <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #cb2e26">
        <div>
-           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Red on hover</p>
+           <p class="tooltip"  style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Red on hover</p>
          <p id="p2" style="color: #363135">#cb2e26</p>  
          <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -801,7 +803,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #363135">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Black</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Black</p>
          <p id="p3" style="color: #363135">#363135</p>  
          <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -823,7 +825,7 @@ These guidelines provide you with everything you need to create materials for th
     <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #ADACAD">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Medium gray</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Medium gray</p>
          <p id="p5" style="color: #363135">#ADACAD</p>  
          <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -832,7 +834,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #DBD9DB">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Light gray</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Light gray</p>
          <p id="p6" style="color: #363135">#DBD9DB</p>  
          <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -841,7 +843,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #F6F4F6">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Platinum</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Platinum</p>
          <p id="p7" style="color: #363135">#F6F4F6</p>  
          <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -850,7 +852,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #F0F4FA">
        <div>
-           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Solid bg</p>
+           <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Solid bg</p>
          <p id="p8" style="color: #363135">#F0F4FA</p>  
          <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -862,7 +864,7 @@ These guidelines provide you with everything you need to create materials for th
     <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #7f6234">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow text</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow text</p>
          <p id="p9" style="color: #363135">#7f6234</p>  
          <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -871,7 +873,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #FFE9AA">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow button</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow button</p>
          <p id="p10" style="color: #363135">#FFE9AA</p>  
          <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -880,7 +882,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #F9E3A5">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow hover</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow hover</p>
          <p id="p11" style="color: #363135">#F9E3A5</p>  
          <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -889,7 +891,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #FFF9DF">
        <div>
-           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow bg</p>
+           <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow bg</p>
          <p id="p12" style="color: #363135">#FFF9DF</p>  
          <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -901,7 +903,7 @@ These guidelines provide you with everything you need to create materials for th
     <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #2F5494">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box text</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box text</p>
          <p id="p13" style="color: #363135">#2F5494</p>  
          <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -910,7 +912,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #CCE5FF">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box bg</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box bg</p>
          <p id="p14" style="color: #363135">#CCE5FF</p>  
          <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -919,7 +921,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #3b5998">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Facebook</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Facebook</p>
          <p id="p15" style="color: #363135">#3b5998</p>  
          <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -928,7 +930,7 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #00acee">
        <div>
-           <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Twitter</p>
+           <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Twitter</p>
          <p id="p16" style="color: #363135">#00acee</p>  
          <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
