@@ -429,7 +429,52 @@ h5 {
   background-color: #666;
   color: white;
 }
+
     
+/*principles grid css*/
+
+.principle-card{
+  padding: 20px;
+  border: 1px solid #DBD9DB;
+  Border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.row-principles {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-principles {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width:50%;
+  padding: 0 4px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-principles {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-principles {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*principles grid css - end*/
 </style>
 <body>
 
@@ -495,19 +540,26 @@ These guidelines provide you with everything you need to create materials for th
     In many of these countries, democracy is broken -- people in power are not accountable to the people whose lives they impact. We want there to be a world where decision-making spaces are open, so that people can fully participate in holding the powerful to account.</p>
     <p>
     We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.</p> </blockquote>
-      
+    
+    <div class="w3-outline" style="margin-top: 40px;">
+    <div class="w3-container" style="padding: 10px 30px;">
     <span class="badge-primary">2-line description</span>
-    <h3 style="margin-top: 10px;">The Change.org Foundation is a global non-profit that leverages the global Change.org platform in 11 countries, combining it with highly localized programs, analytics intelligence and technology for collective action.</h3> 
-      
+    <h3 style="margin-top: 10px; line-height: 35px">The Change.org Foundation is a global non-profit that leverages the global Change.org platform in 11 countries, combining it with highly localized programs, analytics intelligence and technology for collective action.</h3> 
+        </div>
+      </div>
+    <div class="w3-outline" style="margin-top: 40px;">
+    <div class="w3-container" style="padding: 10px 30px;">
     <span class="badge-primary" style="margin-top: 20px;">Elevator speech</span>   
     <strong> 
-     <p style="margin-top: 10px;">The Change.org Foundation is a global non-profit operating in a diverse set of countries with very different realities, spanning Latin America, Asia, Europe, and soon, Africa.
+     <p style="margin-top: 10px; line-height: 30px">The Change.org Foundation is a global non-profit operating in a diverse set of countries with very different realities, spanning Latin America, Asia, Europe, and soon, Africa.
     </p>
-    <p>In many of these countries, democracy is broken -- people in power are not accountable to the people whose lives they impact. We want there to be a world where decision-making spaces are open, so that people can fully participate in holding the powerful to account.
+    <p style="line-height: 30px">In many of these countries, democracy is broken -- people in power are not accountable to the people whose lives they impact. We want there to be a world where decision-making spaces are open, so that people can fully participate in holding the powerful to account.
     </p>
-    <p>We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs, analytics intelligence and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.
+    <p style="line-height: 30px">We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs, analytics intelligence and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.
     </p>
       </strong>
+                </div>
+      </div>
       
   <h5 style="font-size: 14px">Mission</h5>
     <blockquote>
@@ -520,43 +572,44 @@ These guidelines provide you with everything you need to create materials for th
       <p>By the end of 2021, the Foundation will serve users across four continents as a sustainable, resilient, and unified global organization. Every country operation will be sustained by users who deeply believe in the power of Change.org campaigns and citizen-led collective action and we partner with mission-aligned funders to deliver high-impact, relevant local programs.
     </p> 
     <p>As a network of countries facing diverse realities, our strategies and systems balance local flexibility and entrepreneurialism with a shared commitment to building the most globally recognizable and powerful social change brand in the world. Our culture celebrates both diversity and global solidarity; we exercise servant leadership at every level; and we build our organization in a way that honors the courage and tenacity of our users, members, and partners working on the frontlines of social change.
-    </p>   
+    </p>  </blockquote> 
       <a href="https://docs.google.com/document/d/1Dm9PPv08m41CJeD4Vgl6estz98VaG2hf0HECDk_4aKw/edit#" target="_blank"><button class="btn-outline">Foundation Strategy 2020</button></a>
-    </blockquote>
+    
       </div>
       
       <!-- Principles section -->
-  <div class="w3-container" style="margin-top:20px" id="about">
+  <div class="w3-container" style="margin-top:40px" id="about">
     <h1 style="color: red"><b>Our principles.</b></h1>
+      <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work. </p>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     </div>   
-  <div class="w3-container col-container">
-    <div class="w3-outline col" style="">
-    <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work. </p> 
+  <!-- principles Grid -->
+<div class="row-principles" style="margin: 10px"> 
+  <div class="column-principles">
+  <div class="principle-card">
+    <h5 style="font-size: 14px; color: #ED2D23">We have a grassroots mindset.</h5>
+      <p>Our internal decisions and strategies are based on deep listening of our staff and users' experience. All of the Foundation's work is focussed on serving the realisation of the mission in our countries and our external projects are true collaborations with users and partners.</p>
     </div>
-    <div class="w3-outline col" style="">
-      <strong><p>We have a grassroots mindset.</p></strong>
-<p>Our internal decisions and strategies are based on deep listening of our staff and users' experience. All of the Foundation's work is focussed on serving the realisation of the mission in our countries and our external projects are true collaborations with users and partners.</p>
+   <div class="principle-card">
+    <h5 style="font-size: 14px; color: #ED2D23">We thrive together.</h5>
+       <p>We believe in our collective impact working together as a Foundation. We actively support each other in our learning. We ask questions that go beyond the platform and we make time to reflect and share with our colleagues.</p>
     </div>
-    <div class="w3-outline col" style="">
-<strong><p>We thrive together.</p></strong>
-<p>We believe in our collective impact working together as a Foundation. We actively support each other in our learning. We ask questions that go beyond the platform and we make time to reflect and share with our colleagues.</p>
-    </div>
-      </div>
-      <div class="w3-container col-container">
-    <div class="w3-outline col" style="">
-    <strong><p>We are free to create.</p></strong>
-<p>Fostering new ideas for empowering our users and petition starters is an everyday challenge that every member of staff owns. We are free to decide our strategies and we will be supported to try new things, learning from failures as well as successes.</p> 
-    </div>
-    <div class="w3-outline col" style="">
-<strong><p>We are diverse, inclusive and transparent</p></strong>
-<p>We celebrate the diversity of our countries, staff and users in the Foundation. We are all building an empowering place to work, so all Foundation staff will be involved in the decisions that affect them. Our users and colleagues know who we are and what we are working on, because we are proactive and transparent in our communications.</p>
-    </div>
-    <div class="w3-outline col" style="">
-    <strong><p>We are impact-driven</p></strong>
-<p>As a non-profit, we will always prioritise maximising impact. Wherever possible, we design our work so that the products and value it creates are free, open and commons-based, creating a shared environment for social good.</p>
+      <div class="principle-card">
+        <h5 style="font-size: 14px; color: #ED2D23">We are impact-driven</h5>
+       <p>As a non-profit, we will always prioritise maximising impact. Wherever possible, we design our work so that the products and value it creates are free, open and commons-based, creating a shared environment for social good.</p>
     </div>
   </div>
+  <div class="column-principles">
+      <div class="principle-card">
+        <h5 style="font-size: 14px; color: #ED2D23">We are free to create.</h5>
+       <p>Fostering new ideas for empowering our users and petition starters is an everyday challenge that every member of staff owns. We are free to decide our strategies and we will be supported to try new things, learning from failures as well as successes.</p>
+    </div>
+      <div class="principle-card">
+        <h5 style="font-size: 14px; color: #ED2D23"><i class="fa-check-circle"></i>&nbsp; We are diverse, inclusive and transparent.</h5>
+       <p>We celebrate the diversity of our countries, staff and users in the Foundation. We are all building an empowering place to work, so all Foundation staff will be involved in the decisions that affect them. Our users and colleagues know who we are and what we are working on, because we are proactive and transparent in our communications.</p>
+    </div>
+  </div>
+</div>
       
 <div class="w3-container">
 <a href="https://drive.google.com/file/d/0BylFLp45Gv6Oc05ZeGl2dFdIQUN3TlRUZ044cmtkUm1TMGVz/view?usp=sharing" target="_blank"><button class="btn-outline">Foundation Principles Poster</button></a>
