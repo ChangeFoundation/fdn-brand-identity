@@ -105,7 +105,7 @@ h5 {
     text-align: center;
     line-height: 1;
     border-radius: 5px;
-    border: 2px solid #adacad;
+    border: 2px solid #DBD9DB;
     background-color: transparent;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-appearance: initial!important;
@@ -475,7 +475,47 @@ h5 {
     max-width: 100%;
   }
 }
-/*principles grid css - end*/
+    
+/*Tooltip css*/
+.tooltip {
+  position: relative;
+/*  display: inline-block;*/
+  display: table;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #363135;
+  color: #fff;
+  text-align: left;
+  border-radius: 3px;
+  padding: 11px 11px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 </style>
 <body>
@@ -533,7 +573,7 @@ These guidelines provide you with everything you need to create materials for th
         Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/" target="_blank" >Change.org brand writing guide</a> when promoting day-to-day platform activities. The voice and tone below applies to channels we specifically talk about the Change.org Foundation.</div>
     
 <!-- About Us section -->
-  <div class="w3-container" style="margin-top:20px" id="about">
+  <div class="w3-container" style="margin-top:40px" id="about">
     <h1 style="color: red"><b>About us.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   <h5 style="font-size: 14px">What is the Foundation</h5>
@@ -625,7 +665,7 @@ These guidelines provide you with everything you need to create materials for th
      
       
       <!-- Principles section -->
-  <div class="w3-container" style="margin-top:40px" id="">
+  <div class="w3-container" style="margin-top: 60px" id="">
     <h1 style="color: red"><b>Our principles.</b></h1>
       <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work. </p>
     <hr style="width:50px;border:5px solid red" class="w3-round">
@@ -664,7 +704,7 @@ These guidelines provide you with everything you need to create materials for th
   </div>
     
   <!-- Section Logo -->
-  <div class="w3-container" style="margin-top:40px" id="logo">
+  <div class="w3-container" style="margin-top:60px" id="logo">
     <h1 style="color: red"><b>Logo &amp; Design.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   <h5 style="font-size: 14px">How to use our logo?</h5>
@@ -741,7 +781,9 @@ These guidelines provide you with everything you need to create materials for th
     <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #ED2D23;">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Brand Red</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Brand Red&nbsp;<i class="fa fa-question-circle" style="color: #ADACAD"></i>
+             <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+           </p>
          <p id="p1" style="color: #363135">#ED2D23</p>  
          <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
@@ -768,7 +810,8 @@ These guidelines provide you with everything you need to create materials for th
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #737273">
        <div>
-         <p style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray</p>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray
+         <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span></p>
          <p id="p4" style="color: #363135">#737273</p>  
          <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%">Copy to clipboard</button>
        </div>
