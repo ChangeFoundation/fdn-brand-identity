@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="//static.change.org/favicon/favicon-32x32.png">
 <link rel="stylesheet" type="text/css" href="style.css">
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css">
@@ -404,9 +403,12 @@ select {
     display: table-cell;
     padding: 16px;
 }
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 .mobile-half {
     width: 50%;
+}
+.w3-row-padding {
+    width: 100%;
 }
         }
 .color-card {
@@ -509,18 +511,18 @@ select {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 300px;
-  background-color: #363135;
+  background-color: rgba(54,49,53,.98);
   color: #fff;
   text-align: left;
-  border-radius: 3px;
-  padding: 11px 11px;
+  border-radius: 5px;
+  padding: .5em 1em;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
   margin-left: -60px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: .8rem;
+  line-height: normal;
   font-weight: 300;
 }
 
@@ -532,13 +534,14 @@ select {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: rgba(54,49,53,.98) transparent transparent transparent;
+  transition: opacity .2s ease-out;
+  z-index: 4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
 </style>
 <body>
 
@@ -731,63 +734,63 @@ select {
     <h1 style="color: red"><b>Logo &amp; Design.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   <h5 style="font-size: 14px">How to use our logo?</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    <p>Our brand plays a role in the lives of many people and in broader societies. Our logo is recognized by millions around the world and we want to take care of it whenever we design or create something new. Our logo is what unites our actions, platforms and products with the Change.org ecosystem. 
     </p>   
   </div>
     
     <!-- button download logo files -->
-<div class="w3-container" style="margin-top:20px" id="">
+<div class="w3-container" style="margin-top:20px">
   <!-- Trigger the modal with a button -->
     <a href="img/Country-logos.zip" download="Country-logos.zip"><button type="button" class="btn-outline">Download Foundation logo files</button></a>
 </div>
     
-    <!-- Photo grid (modal) -->
+    <!-- Main logo 2 columns -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Change.org Foundation Logo">
+      <img src="img/logo/Foundation/logo-fdn.png" style="opacity: 1; width:100%; border: 1px solid #DBD9DB; padding: 30px 50px; cursor: auto" alt="Change.org Foundation Logo">
     </div>
-      <div class="w3-half">
-      <img src="https://hotsites-wordpress.s3.amazonaws.com/uploads/2020/05/logo2.png" style="width:100%;  border: 1px solid #DBD9DB;" onclick="onClick(this)" alt="Logo construction">
+    <div class="w3-half">
+      <img src="img/logo-fdn-w.png" style="opacity: 1; width:100%; border: 1px solid #DBD9DB; padding: 30px 50px; background-color: #ED2D23" alt="Change.org Foundation Logo">
     </div>
   </div>
     
     <!-- 3 columnns logo images -->
   <div class="w3-row-padding">
     <div class="w3-col m4 w3-margin-bottom">
-<img src="img/logo-usage-1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="If you need to use the logo in dark background use it in white."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">If you need to use the logo in dark background use it in white.</p>
+<img src="img/logo/Foundation/logo-fdn.png" style="width:100%; border: 1px solid #8bc34a; padding: 50px 30px;" alt="Logo usage 1"><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;"><i class="fa fa-check" style="color: #8bc34a">&nbsp;</i>The logo should always be used in Change.org red and dark gray for the country name.</p>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <img src="img/logo-usage-2%20copia.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="The logo should always be used in Change.org red."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">The logo should always be used in Change.org red.</p>
+  <div class="w3-col m4 w3-margin-bottom">
+<img src="img/logo/Foundation/logo-fdn-w.png" style="width:100%; border: 1px solid #8bc34a; padding: 50px 30px; background-color: #363135; background-image: url('https://static.change.org/brand-pages/impact/Impact-grid-720.jpg'); background-repeat: no-repeat; background-size: cover;" alt="Logo usage 1"><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;"><i class="fa fa-check" style="color: #8bc34a">&nbsp;</i>If you need to use the logo in dark background use it in white.</p>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <img src="img/logo-usage-3.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="The “C” and the first letter of the country name is always capitalized."><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;">The “C” and the first letter of the country name is always capitalized.</p>
+<div class="w3-col m4 w3-margin-bottom">
+      <img src="img/logo/Foundation/logo-fdn-plain.png" style="width:100%; border: 1px solid #8bc34a; padding: 50px 30px; background-color: #fff" alt="Logo usage 1"><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;"><i class="fa fa-check" style="color: #8bc34a">&nbsp;</i>If you need to use our logo in text always the “C” and the first letter of the country name is always capitalized.</p>
     </div>
   </div>
 <hr class="rule-dashed">
         <!-- do's and don'ts -->
     <div class="w3-container" style="margin-top:20px" id="">
-    <h5 style="font-size: 14px">Wrong ways of using the Logo.</h5>
+    <h5 style="font-size: 14px">Wrong ways of using our Logo.</h5>
   </div>
   <div class="w3-row-padding"  style="padding: 0px 8px !important;">
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-<img src="img/wrong-logo1.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+<img src="img/wrong-logo1.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Do not use the Change.org icon and logo at the same time.</p>
     </div>
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-      <img src="img/wrong-logo2.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+      <img src="img/wrong-logo2.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Changing the logo color is not allowed.</p>
     </div>
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-      <img src="img/wrong-logo3.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+      <img src="img/wrong-logo3.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Do not Don’t stretch or alter the logo.</p>
     </div>
       </div>
       <div class="w3-row-padding" style="padding: 0px 8px !important;">
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-<img src="img/wrong-logo4.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+<img src="img/wrong-logo4.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Do not use the Foundation logo next to the Change.org icon.</p>
     </div>
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-      <img src="img/wrong-logo5.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+      <img src="img/wrong-logo5.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Do not apply effects or stylize the logo in any case.</p>
     </div>
     <div class="w3-col m4 w3-margin-bottom" style="padding: 0px 8px !important;">
-      <img src="img/wrong-logo6.png" style="width:100%; border: 1px solid #DBD9DB;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; color: red; text-align: left;"><strong>NO</strong> - don not use...</p>
+      <img src="img/wrong-logo6.png" style="width:100%; border: 1px solid red;" onclick="" alt="Change.org Foundation Logo"><p style="font-size: 14px; padding-right: 10px; text-align: left;"><i class="fa fa-times" style="color: red">&nbsp;</i>Do not split the logo in two lines.</p>
     </div>
   </div>
 
@@ -798,17 +801,16 @@ select {
     <p>We share the colors of the Change.org PBC platform trying to minimize design friction on users who transit sites or products of the foundation. 
     </p></div>
             <div class="w3-container" style="margin-top:20px">
-    <a href="img/Change.org%20-%20Brand%20colors.pdf" download="Foundation-logo.png" target="_blank"><button type="button" class="btn-outline">Download the color palette guide</button></a>
+    <a href="img/logo/Foundation-color-palette.pdf" download="FDN color styles.png" target="_blank"><button type="button" class="btn-outline">Download the color palette guide</button></a>
   </div>
           <div class="w3-row-padding" style="margin-top: 20px">  
     <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #ED2D23;">
        <div>
-         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Brand Red&nbsp;<i class="fa fa-question-circle" style="color: #ADACAD"></i>
-             <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Brand Red
            </p>
-         <p id="p1" style="color: #363135">#ED2D23</p>  
-         <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p1" style="color: #363135; display: none">#ED2D23</p>  
+         <button onClick="changeText('Copy #ED2D23', 'Copied!', 'Copy #ED2D23'); copyToClipboard('#p1')" id="Copy #ED2D23" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #ED2D23</button>
        </div>
     </div>
         </div>
@@ -816,8 +818,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #cb2e26">
        <div>
            <p class="tooltip"  style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Red on hover</p>
-         <p id="p2" style="color: #363135">#cb2e26</p>  
-         <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p2" style="color: #363135; display: none">#cb2e26</p>  
+         <button onClick="changeText('Copy #cb2e26', 'Copied!', 'Copy #cb2e26'); copyToClipboard('#p2')" id="Copy #cb2e26" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #cb2e26</button>
        </div>
     </div>
         </div>
@@ -825,18 +827,17 @@ select {
         <div class="color-card" style="border-top: 30px solid #363135">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Black</p>
-         <p id="p3" style="color: #363135">#363135</p>  
-         <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p3" style="color: #363135; display: none">#363135</p>  
+         <button onClick="changeText('Copy #363135', 'Copied!', 'Copy #363135'); copyToClipboard('#p3')" id="Copy #363135" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #363135</button>
        </div>
     </div>
         </div>
               <div class="w3-quarter m4 w3-margin-bottom mobile-half">
         <div class="color-card" style="border-top: 30px solid #737273">
        <div>
-         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray
-         <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span></p>
-         <p id="p4" style="color: #363135">#737273</p>  
-         <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Dark gray</p>
+         <p id="p4" style="color: #363135; display: none">#737273</p>  
+         <button onClick="changeText('Copy #737273', 'Copied!', 'Copy #737273'); copyToClipboard('#p4')" id="Copy #737273" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #737273</button>
        </div>
     </div>
         </div>
@@ -847,8 +848,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #ADACAD">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Medium gray</p>
-         <p id="p5" style="color: #363135">#ADACAD</p>  
-         <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p5" style="color: #363135; display: none">#ADACAD</p>  
+         <button onClick="changeText('Copy #ADACAD', 'Copied!', 'Copy #ADACAD'); copyToClipboard('#p5')" id="Copy #ADACAD" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #ADACAD</button>
        </div>
     </div>
         </div>
@@ -856,8 +857,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #DBD9DB">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Light gray</p>
-         <p id="p6" style="color: #363135">#DBD9DB</p>  
-         <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p6" style="color: #363135; display: none">#DBD9DB</p>  
+         <button onClick="changeText('Copy #DBD9DB', 'Copied!', 'Copy #DBD9DB'); copyToClipboard('#p6')" id="Copy #DBD9DB" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #DBD9DB</button>
        </div>
     </div>
         </div>
@@ -865,8 +866,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #F6F4F6">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Platinum</p>
-         <p id="p7" style="color: #363135">#F6F4F6</p>  
-         <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p7" style="color: #363135; display: none">#F6F4F6</p>  
+         <button onClick="changeText('Copy #F6F4F6', 'Copied!', 'Copy #F6F4F6'); copyToClipboard('#p7')" id="Copy #F6F4F6" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #F6F4F6</button>
        </div>
     </div>
         </div>
@@ -874,8 +875,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #F0F4FA">
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Solid bg</p>
-         <p id="p8" style="color: #363135">#F0F4FA</p>  
-         <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p8" style="color: #363135; display: none">#F0F4FA</p>  
+         <button onClick="changeText('Copy #F0F4FA', 'Copied!', 'Copy #F0F4FA'); copyToClipboard('#p8')" id="Copy #F0F4FA" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #F0F4FA</button>
        </div>
     </div>
         </div>
@@ -886,8 +887,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #7f6234">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow text</p>
-         <p id="p9" style="color: #363135">#7f6234</p>  
-         <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p9" style="color: #363135; display: none">#7f6234</p>  
+         <button onClick="changeText('Copy #7f6234', 'Copied!', 'Copy #7f6234'); copyToClipboard('#p9')" id="Copy #7f6234" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #7f6234</button>
        </div>
     </div>
         </div>
@@ -895,8 +896,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #FFE9AA">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow button</p>
-         <p id="p10" style="color: #363135">#FFE9AA</p>  
-         <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p10" style="color: #363135; display: none">#FFE9AA</p>  
+         <button onClick="changeText('Copy #FFE9AA', 'Copied!', 'Copy #FFE9AA'); copyToClipboard('#p10')" id="Copy #FFE9AA" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #FFE9AA</button>
        </div>
     </div>
         </div>
@@ -904,8 +905,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #F9E3A5">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow hover</p>
-         <p id="p11" style="color: #363135">#F9E3A5</p>  
-         <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p11" style="color: #363135; display: none">#F9E3A5</p>  
+         <button onClick="changeText('Copy #F9E3A5', 'Copied!', 'Copy #F9E3A5'); copyToClipboard('#p11')" id="Copy #F9E3A5" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #F9E3A5</button>
        </div>
     </div>
         </div>
@@ -913,8 +914,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #FFF9DF">
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Yellow bg</p>
-         <p id="p12" style="color: #363135">#FFF9DF</p>  
-         <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p12" style="color: #363135; display: none">#FFF9DF</p>  
+         <button onClick="changeText('Copy #FFF9DF', 'Copied!', 'Copy #FFF9DF'); copyToClipboard('#p12')" id="Copy #FFF9DF" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #FFF9DF</button>
        </div>
     </div>
         </div>
@@ -925,8 +926,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #2F5494">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box text</p>
-         <p id="p13" style="color: #363135">#2F5494</p>  
-         <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p13" style="color: #363135; display: none">#2F5494</p>  
+         <button onClick="changeText('Copy #2F5494', 'Copied!', 'Copy #2F5494'); copyToClipboard('#p13')" id="Copy #2F5494" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #2F5494</button>
        </div>
     </div>
         </div>
@@ -934,8 +935,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #CCE5FF">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Blue box bg</p>
-         <p id="p14" style="color: #363135">#CCE5FF</p>  
-         <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p14" style="color: #363135; display: none">#CCE5FF</p>  
+         <button onClick="changeText('Copy #CCE5FF', 'Copied!', 'Copy #CCE5FF'); copyToClipboard('#p14')" id="Copy #CCE5FF" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #CCE5FF</button>
        </div>
     </div>
         </div>
@@ -943,8 +944,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #3b5998">
        <div>
          <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Facebook</p>
-         <p id="p15" style="color: #363135">#3b5998</p>  
-         <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p15" style="color: #363135; display: none">#3b5998</p>  
+         <button onClick="changeText('Copy #3b5998', 'Copied!', 'Copy #3b5998'); copyToClipboard('#p15')" id="Copy #3b5998" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #3b5998</button>
        </div>
     </div>
         </div>
@@ -952,8 +953,8 @@ select {
         <div class="color-card" style="border-top: 30px solid #00acee">
        <div>
            <p class="tooltip" style="font-size: 18px; line-height: 22px; font-weight: 600; color: #363135">Twitter</p>
-         <p id="p16" style="color: #363135">#00acee</p>  
-         <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%">Copy code</button>
+         <p id="p16" style="color: #363135; display: none">#00acee</p>  
+         <button onClick="changeText('Copy #00acee', 'Copied!', 'Copy #00acee'); copyToClipboard('#p16')" id="Copy #00acee" type="button" class="btn-outline" style="width: 100%; font-size: 14px;">Copy #00acee</button>
        </div>
     </div>
         </div>    
@@ -962,7 +963,7 @@ select {
    <hr class="rule-dashed">
     
     <div class="w3-container" style="margin-top:20px" id="icons">
-      <h5 style="font-size: 14px">Foundation icons.</h5>
+      <h5 style="font-size: 14px">Change.org Foundation icons.</h5>
     <p>Clic on any icon to download it as an image without background or download all of them at once with the button below. 
     </p></div>
             <div class="w3-container" style="margin-top:20px">
@@ -1058,15 +1059,25 @@ select {
 
     
 <hr class="rule-dashed">
+          
+              <div class="w3-container" style="margin-top:20px" id="icons">
+      <h5 style="font-size: 14px">Change.org Foundation Fonts.</h5>
+    <p>Consistent typography helps to center Change.org's visual identity. We use one font called Change Calibre for all materials.
+    </p></div>
+            <div class="w3-container" style="margin-top:20px">
+    <a href="#" download="FoundationIcons" target="_blank"><button type="button" class="btn-outline">Download the Fonts files</button></a>
+  </div>
 
-  <div class="w3-container" style="margin-top:20px" id="fonts">
-    <img src="img/typography.webp" style="width:100%" onclick="onClick(this)" alt="Petition delivery box"> 
-    <p>Consistent typography helps to center Change.org's visual identity. We use one font called Change Calibre for all materials.</p>
-    <button class="btn-outline">Download all font files (zip)</button>
+  <div class="w3-container" style="margin-top:20px;" id="fonts">
+<div class="w3-outline" style="background-color: #F6F4F6; border: 2px dashed #DBD9DB">
+        <div class="w3-container" style="padding: 10px 30px;">
+            <h3 style="margin-top: 10px; line-height: 40px; font-weight: bold !important; font-size: 30px">The quick brown fox jumps over the lazy dog.<br>1234567890!@#$%*</h3><h5 style="font-weight: 300;">Change calibre - bold</h5>
+            <h3 style="margin-top: 10px; line-height: 40px; font-weight: 100 !important; font-size: 30px;">The quick brown fox jumps over the lazy dog.<br>1234567890!@#$%*</h3><h5 style="font-weight: 300;">Change calibre - Regular</h5>
+        </div>
+    </div> 
   </div>
     
   <!-- writing principles -->
-    <hr class="rule-dashed">
 
   <div class="w3-container" id="writing" style="margin-top:40px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Templates.</b></h1>
