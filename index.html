@@ -542,6 +542,17 @@ select {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+    
+.chart-column {
+  border: 1px solid #DBD9DB;
+  border-radius: 5px;
+}
+.chart-column-title  {
+  color: #363135!important;
+  background-color: #F6F4F6!important;
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+}
 </style>
 <body>
 
@@ -556,8 +567,8 @@ select {
   <div class="w3-bar-block">
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
     <a href="#logo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logo &amp; Design</a> 
-    <a href="#fonts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Templates</a> 
-    <a href="#colors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Writing guide</a> 
+    <a href="#templates" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Templates</a> 
+    <a href="#writing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Writing guide</a> 
   </div>
 </nav>
 
@@ -1313,41 +1324,80 @@ select {
     </div> 
   </div>
     
-  <!-- writing principles -->
+  <!-- Templates -->
 
-  <div class="w3-container" id="writing" style="margin-top:40px">
+  <div class="w3-container" id="templates" style="margin-top:40px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Templates.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-      
+ <!-- Presentations -->     
       <h5 style="font-size: 14px">Presentations</h5>
-    <p>Use this Google Slides template for presentations where you are representing the Foundation. It includes pre-designed slide templates and guidance to help you create a high-quality, on-brand deck.
-    </p> 
+      <p><strong>Take your presentations to the next level.</strong></p><p>Take a look at these resources that we have grouped together for you. Use this Google Slides guidelines for presentations when representing the Foundation. It includes pre-designed slide templates and guidance to help you create a high-quality, on-brand deck.</p> 
+      <a href="https://docs.google.com/presentation/d/14_7xMKH1iXM0FAYDWTYSi413XWpAmtDXBPXQbYAHuOM/edit?usp=sharing" target="_blank"><button type="button" class="btn-outline">See slides resources</button></a><p style="margin-top: 0"><i style="font-size: 12px">You will only be able to see this link with your Change.org email account</i></p>
+      <div class="w3-outline" style="margin-top: 20px; background-color: #FFF9DF; border: 1px solid #F9E3A5; color: #7f6234">
+      <div class="w3-container" style="padding: 10px 30px;">
+            <p><strong><span class="symbol symbol-notifications symbol-compact" style="color: #7f6234"></span>&nbsp;Use icons from Flaticon's add-on for G Suite</strong></p>
+          <p>If you need more icons to make your presentation even more awesome you can use Flaticon's add-on for Google Slides. <a type="button" data-toggle="modal" data-target="#myModal2" style="font-weight: bold; color: #7f6234">Here a quick tutorial on how to install it. </a></p>
+      </div>
+      </div>
+    
       
-      <p>Refer to the Change.org graphics for documents section for additional design elements you can add to your slides.</p>
+<!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Use icons from Flaticon's add-on for G Suite</h4>
+        </div>
+        <div class="modal-body">
+            <p>1. Open your Google Slides presentation</p>
+            <p>2. Click Add-ons on the top bar → then click Get add-ons.</p>
+            <img src="img/step1-flaticon.png" style="width: 100%">
+            <p>3. Locate Flaticon extension and install it by giving account permission.</p>
+            <img src="img/step2-flaticon.png" style="width: 100%">
+            <p>4. Run the extension. Click add-ons → Icons for slides & docs → Start</p>
+            <img src="img/step3-flaticon.png" style="width: 100%">
+            <p>5. Serch for icons, choose size and color and insert them to the presentation. <strong>IMPORTANT: Make sure you only use icons relevant to our brand style.</strong></p>
+            <img src="img/step4-flaticon.png" style="width: 100%">
+            <p><strong>Enjoy!</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-outline" data-dismiss="modal" style="width: 30%">Close</button>
+        </div>
+      </div>
       
-      <h5 style="font-size: 14px">Letterheads</h5>
-      <p>Use these letterhead templates when creating correspondence for Change.org. They are available in Google Doc, Apple Pages, and Microsoft Word formats.</p>
-      
-      <h5 style="font-size: 14px">Staff Avatars</h5>
-      <p>Each person working for the Foundation has their own comics version, like the ones below. Find and download the specific staff you’re looking for, or the full pack. (Search bar?)</p>
-      
+    </div>
   </div>
+<!-- end Modal -->
+<hr class="rule-dashed">
+<!-- Staff Avatars --> 
+      <h5 style="font-size: 14px; margin-top: 40px">Staff Avatars</h5>
+      <p>All the people who work for the foundation have their profile picture done in cartoon style. Find and download the specific person you’re looking for, or the full pack of profile avatars.</p>
+      <p style="margin-bottom: 30px"><img src="img/Danny-avatar.png" style="background-color: #DBD9DB; border-radius: 100%; margin-right: 10px" width="70px"><img src="img/CARLOTA-avatar.png" style="background-color: #DBD9DB; border-radius: 100%; margin-right: 10px" width="70px"><img src="img/Fran-avatar.png" style="background-color: #DBD9DB; border-radius: 100%; margin-right: 10px" width="70px"><img src="img/PRIMA-avatar.png" style="background-color: #DBD9DB; border-radius: 100%;" width="70px"></p>
+      <a href="https://drive.google.com/drive/folders/1ZQTNJ5OMVAED3aQRey2cOn2sRK32a-5k?usp=sharing" target="_blank"><button type="button" class="btn-outline">See the avatars directory</button></a><p style="margin-top: 0"><i style="font-size: 12px">If you don't have access to this folder ask your manager.</i></p>
+<!-- end Staff Avatars -->   
+      
+    </div>
     
     <!-- Voice and tone -->
     <hr class="rule-dashed">
 
-  <div class="w3-container" id="voice" style="margin-top: 40px">
+  <div class="w3-container" id="writing" style="margin-top: 40px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Writing guide.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/">Change.org brand writing guide</a> when promoting day-to-day platform activities. 
+    <strong>The voice and tone below applies to channels we specifically talk about the Change.org Foundation:
+    </strong></p>
     <h5>Audience</h5>
-    <p>Foundation teams should still follow Change.org brand writing guide when promoting day-to-day platform activities.</p> 
-    <p>The voice and tone below applies to channels we specifically talk about the Change.org Foundation:
-    </p> 
-      
-            <div class="w3-row-padding" style="margin-top: 20px;">
+          </div>
+    
+<!-- 2 columns -->
+    <div class="w3-row-padding" style="margin-top: 10px;">
     <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">External-facing</li>
+      <ul class="w3-ul chart-column w3-center">
+        <li class="chart-column-title w3-xlarge">External-facing</li>
         <li>Foundation site and blog</li>
         <li>Impact Reports</li>
         <li>Countries microsites</li>
@@ -1360,8 +1410,8 @@ select {
     </div>
         
     <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Internal-facing</li>
+      <ul class="w3-ul chart-column w3-center">
+        <li class="chart-column-title w3-xlarge">Internal-facing</li>
         <li>All-Team Call</li>
         <li>Global Foundation Call</li>
         <li>Vitamin C newsletter</li>
@@ -1370,39 +1420,56 @@ select {
       </ul>
     </div>
   </div>
-      
-      <h5>Voice &amp; tone</h5>
-    <p>The voice of the Change.org Foundation is consistent across all channels.</p>
-      
-      
-    <div class="w3-outline" style="margin-top: 40px;">
-        <div class="w3-container" style="padding: 10px 30px;">
-            <p><strong>Personality</strong></p>
-          <p>Hopeful, Credible, Approachable, Innovative</p>
-        </div>
-    </div>    
-    <div class="w3-outline" style="margin-top: 40px;">
-        <div class="w3-container" style="padding: 10px 30px;">
-            <p><strong>Voice</strong></p>
-          <p>Our voice is human. It’s a familiar and friendly voice that speaks with clarity and certainty. We like telling stories about people who share our vision at Change.org and are committed to giving you good news and feel-good updates about what our global community is doing to impact positive change. We have good stories to share and we’re ready to show you the numbers to back them up.</p>
-        </div>
-    </div>    
-  
-      <p>The Change.org Foundation voice is…</p>
-      <ul>
-      <li>Conversational but not too informal</li>  
-      <li>Confident but not arrogant</li>
-      <li>Intelligent but not technical</li>
-      <li>Expert but not bossy</li>
-      <li>Mature but not intimidating</li>
-      <li>Professional but not stodgy</li>
-      <li>Wholesome but not traditional</li>
-      <li>Light-hearted but not playful</li>
-      <li>Helpful but not overbearing</li>
-          <li>Receptive (open to dialogue) but not swayable</li>
-      </ul>
-     </div>
 
+<hr class="rule-dashed">  
+
+    <div class="w3-container" id="writing" style="margin-top: 20px">
+      <h5>Voice &amp; tone</h5>
+    <p>The voice of the Change.org Foundation is consistent across all channels.<br><strong>Our personality is...</strong></p>
+          
+        <div class="w3-row-padding" style="padding: 0px 0px !important;">
+        <div class="w3-half" style="padding: 0px 5px 0px 5px;!important;">
+            <p style="margin-bottom: 5px; border: 1px solid #DBD9DB; border-radius: 5px; padding: 30px 50px; font-size: 17px"><img src="img/hug.png" style="margin-bottom: 0px!important; margin-top: 0px!important;opacity: 1!important;cursor: auto!important;" width="50px">&nbsp;&nbsp;&nbsp;<strong>Hopeful</strong></p>
+        </div>
+            <div class="w3-half" style="padding: 0px 5px 0px 5px;!important;">
+            <p style="margin-bottom: 5px; border: 1px solid #DBD9DB; border-radius: 5px; padding: 30px 50px; font-size: 17px">
+                <img src="img/credible.png" style="margin-bottom: 0px!important; margin-top: 0px!important;opacity: 1!important;cursor: auto!important;" width="35px">&nbsp;&nbsp;&nbsp;<strong>Credible</strong>
+          </p>
+        </div>
+        </div>
+        
+                <div class="w3-row-padding" style="padding: 0px 0px !important;">
+        <div class="w3-half" style="padding: 0px 5px 0px 5px;!important;">
+            <p style="margin-top: 5px; border: 1px solid #DBD9DB; border-radius: 5px; padding: 30px 50px; font-size: 17px"><img src="img/Approachable.png" style="margin-bottom: 0px!important; margin-top: 0px!important;opacity: 1!important;cursor: auto!important;" width="40px">&nbsp;&nbsp;&nbsp;<strong>Approachable</strong></p>
+        </div>
+            <div class="w3-half" style="padding: 0px 5px 0px 5px;!important;">
+            <p style="margin-top: 5px; border: 1px solid #DBD9DB; border-radius: 5px; padding: 30px 50px; font-size: 17px">
+                <img src="img/Innovative.png" style="margin-bottom: 0px!important; margin-top: 0px!important;opacity: 1!important;cursor: auto!important;" width="40px">&nbsp;&nbsp;&nbsp;<strong>Innovative</strong>
+          </p>
+        </div>
+        </div>        
+        
+    <p>Our voice is human. It’s a familiar and friendly voice that speaks with clarity and certainty. We like telling stories about people who share our vision at Change.org and are committed to giving you good news and feel-good updates about what our global community is doing to impact positive change. We have good stories to share and we’re ready to show you the numbers to back them up.<br><strong>Our voice is...</strong></p>
+        
+    <div class="w3-outline" style="margin-top: 40px;">
+        <div class="w3-container" style="padding: 10px 30px;">
+          <ul style="color: #ED2D23;" class="w3-ul">
+      <li><span class="symbol symbol-verified symbol-compact"></span>Conversational but not too informal</li>  
+      <li><span class="symbol symbol-verified symbol-compact"></span>Confident but not arrogant</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Intelligent but not technical</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Expert but not bossy</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Mature but not intimidating</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Professional but not stodgy</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Wholesome but not traditional</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Light-hearted but not playful</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Helpful but not overbearing</li>
+      <li><span class="symbol symbol-verified symbol-compact"></span>Receptive (open to dialogue) but not swayable</li>
+      </ul>
+        </div>
+    </div>    
+
+     </div>
+</div>
  
 <!-- End page content -->
 </div>
