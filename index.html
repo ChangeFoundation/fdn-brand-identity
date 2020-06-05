@@ -420,6 +420,22 @@ select {
     background-color: #fff; 
     Border-radius: 10px;
     }
+    
+.header-card {
+/*    border: 1px solid #DBD9DB; */
+    padding: 1px 20px 20px 20px; 
+    background-color: #fff; 
+    Border-radius: 10px;
+    cursor: pointer;
+    height: 190px;
+    transition: .3s ease;
+    border: 1px solid #DBD9DB;
+    }
+.header-card:hover {
+    background-color: #fff; 
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.17);
+    transform: translateY(-3px) scale(1);
+}
 .filterDiv {
   float: left;
   background-color: #F6F4F6;
@@ -501,6 +517,9 @@ select {
     flex: 100%;
     max-width: 100%;
   }
+  .header-card {
+    height: auto;
+    }
 }
     
 /*Tooltip css*/
@@ -556,11 +575,24 @@ select {
   padding-top: 32px!important;
   padding-bottom: 32px!important;
 }
+mark {
+  background-color: #ED2D23;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px
+}
+.section-divider {
+		border-bottom: 1px solid #FFF;
+		background-color: #ED2D23;
+		height: 2px;
+		margin: 0.5em 0px 1.5em;
+}
+
 </style>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-dark w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-bar-block">
   <img class="w3-padding-64" src="img/badge-transparent.png" style="width: 80%;" alt="Change.org Foundation">
@@ -576,8 +608,8 @@ select {
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-dark w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-dark w3-margin-right" onclick="w3_open()">☰</a>
   <img src="img/logo-fdn-w.png" style="width: 200px; color: #fff" alt="Change.org Foundation" >
 </header>
 
@@ -586,28 +618,62 @@ select {
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
+  
 <!-- Header section -->
-    
-<div class="w3-row-padding" style="border-top-right-radius: 15px; border-top-left-radius: 15px; background-color: #F6F4F6; margin-top: 30px !important;">
+    <div class="w3-container">
+<div class="w3-container" style="border-radius: 10px; background-color: #fff; margin-top: 30px !important; border: 1px solid #DBD9DB">
 <div class="w3-half">
-    <h1 class="w3-jumbo" style="padding: 10% 5%;"><b>Building the Foundation brand.</b></h1>
+    <h1 class="w3-jumbo" style="padding: 10% 5% 1%;"><b>Building the Foundation brand.</b></h1><p style="padding: 1% 5% 10%;">These guidelines provide you with everything you need to create materials for the Change.org Foundation brand.</p>
+<!--    <span class="symbol symbol-facebook symbol-xxl symbol-compact"></span>
+    <span class="symbol symbol-linked-in-alt symbol-xxl symbol-compact"></span>
+    <span class="symbol symbol-twitter symbol-xxl symbol-compact"></span>-->
 </div>
     <div class="w3-half" style="text-align: center;">
-  <img src="img/team.png" style="width: 80%; opacity: 1!important;cursor: auto !important" alt="">
+  <img src="img/UnboxingDoodle.png" style="width: 80%; opacity: 1!important;cursor: auto !important; padding-top: 15px" alt="">
 </div>
   </div>
-    <div class="alert-attached"><span>These guidelines provide you with everything you need to create materials for the Change.org Foundation brand.</span></div>
+    </div>
+        <!-- 3 columnns -->
+  <div class="w3-row-padding">
+  <div class="w3-col m4">
+        <div class="header-card" onclick="window.open('https://changeguru.org/');">
+        <div>
+         <p style="font-size: 25px; line-height: 22px; font-weight: 600; color: #363135">Changeguru.org</p>
+         <p style="font-size: 14px; line-height: 25px; font-weight: 400; color: #363135">Access a collection of learnings and insights to help guide your projects.</p>
+        </div>
+        </div>
+  </div>
+  <div class="w3-col m4">
+        <div class="header-card" onclick="window.open('https://changeguru.org/lab/');">
+        <div>
+         <p style="font-size: 25px; line-height: 22px; font-weight: 600; color: #363135">LAB products</p>
+         <p style="font-size: 14px; line-height: 25px; font-weight: 400; color: #363135">Meet the tools and solutions you need to achieve the impact you envision.</p>
+        </div>
+        </div>
+  </div>
+  <div class="w3-col m4">
+        <div class="header-card" onclick="window.open('https://styleguide.change.org/brand/writing-guide/');">
+        <div>
+         <p style="font-size: 25px; line-height: 22px; font-weight: 600; color: #363135">PBC style guide</p>
+         <p style="font-size: 14px; line-height: 25px; font-weight: 400; color: #363135">Follow PBC brand writing guide when promoting day-to-day platform activities.</p>
+        </div>
+        </div>
+  </div>
+  </div>
+<!-- end 3 columnns -->
     
       <div class="w3-container" style="margin-top:20px" id="about">
-    <div class="alert-outlined">
+    
+<!--          <div class="alert-outlined">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/" target="_blank" >Change.org brand writing guide</a> when promoting day-to-day platform activities. The voice and tone below applies to channels we specifically talk about the Change.org Foundation.</div>
+        Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/" target="_blank" >Change.org brand writing guide</a> when promoting day-to-day platform activities. The voice and tone below applies to channels we specifically talk about the Change.org Foundation.</div>-->
     
 <!-- About Us section -->
   <div class="w3-container" style="margin-top:40px" id="about">
-    <h1 style="color: red"><b>About us.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo" style="color: #ED2D23"><span class="symbol symbol-tag symbol-xxl symbol-compact"></span><b>About us.</b></h1>
+<hr class="section-divider">
+      
+<!--    <hr style="width:50px;border:5px solid red" class="w3-round">-->
   <h5 style="font-size: 14px">What is the Foundation</h5>
     <blockquote><p>The Change.org Foundation is a global non-profit operating in a diverse set of countries with very different realities, spanning Latin America, Asia, Europe, and soon, Africa. </p> 
     <p>
@@ -655,8 +721,7 @@ select {
       </div>
         <div class="w3-container" style="margin-top:20px" id="">      
        <a href="https://docs.google.com/document/d/1Clz3fBfAYxDCxGddi0CrJoATyb4m5ydGuB5ZCsPqlxw/edit?usp=sharing" target="_blank"><button class="btn-outline">Foundation Strategy 2020&nbsp;<span class="symbol symbol-link symbol-compact"></span></button></a>
-  
-      
+    
     <!--metrics: Modal section -->
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn-outline" data-toggle="modal" data-target="#myModal">Quick metrics to talk to the press</button>
@@ -706,9 +771,10 @@ select {
       
       <!-- Principles section -->
   <div class="w3-container" style="margin-top: 60px" id="">
-    <h1 style="color: red"><b>Our principles.</b></h1>
+    <h1 class="w3-jumbo" style="color: #ED2D23"><span class="symbol symbol-tag symbol-xxl symbol-compact"></span><b>Our principles.</b></h1>
+<hr class="section-divider">
       <p>The Foundation adopted the values of the Change.org family and in addition developed a set of principles under which we commit to work. </p>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+
     </div>   
   <!-- principles Grid -->
 <div class="row-principles" style="margin: 10px"> 
@@ -745,8 +811,9 @@ select {
     
   <!-- Section Logo -->
   <div class="w3-container" style="margin-top:60px" id="logo">
-    <h1 style="color: red"><b>Logo &amp; Design.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo" style="color: #ED2D23"><span class="symbol symbol-tag symbol-xxl symbol-compact"></span><b>Logo &amp; Design.</b></h1>
+<hr class="section-divider">
+
   <h5 style="font-size: 14px">How to use our logo?</h5>
     <p>Our brand plays a role in the lives of many people and in broader societies. Our logo is recognized by millions around the world; it's what unites our actions, platforms and products with the Change.org ecosystem. Whenever we design or create something new, we should make sure that it follows our brand guidelines.
     </p>   
@@ -759,7 +826,7 @@ select {
 </div>
     
     <!-- Main logo 2 columns -->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding"  >
     <div class="w3-half">
       <img src="img/logo-fdn.png" style="opacity: 1; width:100%; border: 1px solid #DBD9DB; padding: 30px 50px; cursor: auto" alt="Change.org Foundation Logo">
     </div>
@@ -1330,8 +1397,9 @@ select {
   <!-- Templates -->
 
   <div class="w3-container" id="templates" style="margin-top:40px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Templates.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo" style="color: #ED2D23"><span class="symbol symbol-tag symbol-xxl symbol-compact"></span><b>Templates.</b></h1>
+<hr class="section-divider">
+
  <!-- Presentations -->     
       <h5 style="font-size: 14px">Presentations</h5>
       <p><strong>Take your presentations to the next level.</strong></p><p>Take a look at these resources that we have grouped together for you. Use this Google Slides guidelines for presentations when representing the Foundation. It includes pre-designed slide templates and guidance to help you create a high-quality, on-brand deck.</p> 
@@ -1388,8 +1456,9 @@ select {
     <hr class="rule-dashed">
 
   <div class="w3-container" id="writing" style="margin-top: 40px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Writing guide.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-jumbo" style="color: #ED2D23"><span class="symbol symbol-tag symbol-xxl symbol-compact"></span><b>Writing guide.</b></h1>
+<hr class="section-divider">
+    
     <p>Foundation teams should still follow <a href="https://styleguide.change.org/brand/writing-guide/">Change.org brand writing guide</a> when promoting day-to-day platform activities. 
     <strong>The voice and tone below applies to channels we specifically talk about the Change.org Foundation:
     </strong></p>
