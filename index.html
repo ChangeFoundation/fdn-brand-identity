@@ -413,6 +413,9 @@ select {
 .w3-row-padding {
     width: 100%;
 }
+    .sidebar-logo-padding  {
+	padding-top: 60px!important;
+}
         }
 .color-card {
     border: 1px solid #DBD9DB; 
@@ -597,6 +600,10 @@ mark {
 		text-decoration: underline;
         cursor: pointer;
 }
+.sidebar-logo-padding  {
+	padding-top: 10px;
+    padding-bottom: 50px!important;
+}
 
 </style>
 <body>
@@ -605,15 +612,17 @@ mark {
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-hover-white w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-bar-block">
-  <img class="w3-padding-64" src="img/Icon_cdot.png" style="width: 30%; padding-left: 15px;" alt="Change.org Foundation">
+  <img class="sidebar-logo-padding" src="img/Icon_cdot.png" style="width: 30%; padding-left: 15px;" alt="Change.org Foundation">
 
       <!--    <h3 class="w3-padding-64" style="color:#fff"><b>Change.org<br>Foundation</b></h3>-->
   </div>
   <div class="w3-bar-block">
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+      <ul><a href="#dna"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Our DNA.</li></a></ul>
       <ul><a href="#principles"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Our principles.</li></a></ul>
     <a href="#logo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logo &amp; Design</a> 
-      <ul><a href="#color"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Color Palette.</li></a></ul>
+      <ul><a href="#download-logo"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Logos.</li></a></ul>
+      <ul><a href="#color"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Colors.</li></a></ul>
       <ul><a href="#icons"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Icons.</li></a></ul>
       <ul><a href="#fonts"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Fonts.</li></a></ul>
     <a href="#templates" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Templates</a> 
@@ -696,7 +705,7 @@ mark {
     <p>
     We believe the only path to sustainable positive social change is change led by the people themselves, and that the power of technology can be harnessed to enable more people to be a part of decision making. That’s why we leverage the global Change.org platform and also deliver highly localized programs and technology that accelerate citizen leadership and collective action on critical issues and in critical moments.</p> </blockquote>
     
-    <div class="w3-outline" style="margin-top: 40px;">
+    <div class="w3-outline" style="margin-top: 40px;" id="dna">
     <div class="w3-container" style="padding: 10px 30px;">
     <span class="badge-primary">2-line description</span>
     <h3 style="margin-top: 10px; line-height: 35px">The Change.org Foundation is a global non-profit that leverages the global Change.org platform in 11 countries, combining it with highly localized programs, analytics intelligence and technology for collective action.</h3> 
@@ -833,12 +842,7 @@ mark {
     <p>Our brand plays a role in the lives of many people and in broader societies. Our logo is recognized by millions around the world; it's what unites our actions, platforms and products with the Change.org ecosystem. Whenever we design or create something new, we should make sure that it follows our brand guidelines.
     </p>   
   </div>
-    
-    <!-- button download logo files -->
-<div class="w3-container" style="margin-top:20px">
-  <!-- Trigger the modal with a button -->
-    <a href="img/Country-logos.zip" download="Country-logos.zip"><button type="button" class="btn-outline">Download Foundation logo files&nbsp;<span class="symbol symbol-download symbol-compact"></span></button></a>
-</div>
+
     
 <!--     Main logo 2 columns 
   <div class="w3-row-padding"  >
@@ -858,11 +862,18 @@ mark {
   <div class="w3-col m4 w3-margin-bottom">
 <img src="img/logo-fdn-w.png" style="width:100%; border: 1px solid #8bc34a; padding: 50px 30px; background-color: #363135; background-color: #ED2D23; background-repeat: no-repeat; background-size: cover;" alt="Logo usage 1"><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;"><i class="fa fa-check" style="color: #8bc34a">&nbsp;</i>If you need to use the logo with a dark background, use the white version.</p>
     </div>
-<div class="w3-col m4 w3-margin-bottom">
+<div class="w3-col m4 w3-margin-bottom" id="download-logo">
       <img src="img/logo-fdn-plain.png" style="width:100%; border: 1px solid #8bc34a; padding: 50px 30px; background-color: #fff" alt="Logo usage 1"><p style="font-size: 14px; padding-right: 10px; color: #737273; text-align: left;"><i class="fa fa-check" style="color: #8bc34a">&nbsp;</i>If you need to use our logo in text, the “C” and the first letter of the country name should always be capitalized.</p>
     </div>
   </div>
-<hr class="rule-dashed">
+              <!-- button download logo files -->
+<div class="w3-container" style="margin-top:20px">
+    <a href="img/Country-logos.zip" download="Country-logos.zip"><button type="button" class="btn-outline">Download Foundation logo files&nbsp;<span class="symbol symbol-download symbol-compact"></span></button></a>
+    </div>
+
+
+          
+          <hr class="rule-dashed">
         <!-- do's and don'ts -->
     <div class="w3-container" style="margin-top:20px" id="">
     <h5 style="font-size: 14px">Wrong ways of using our Logo.</h5>
