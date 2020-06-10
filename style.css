@@ -638,7 +638,16 @@ select {
 .sidebar-logo-padding  {
 	padding-top: 60px!important;
 }
-        }
+    .filterDiv-logo {
+	width: 49%!important;
+}
+     }
+@media only screen and (max-width: 1100px) {
+    .logo-size {
+	width: auto;
+    height: 21px!important;
+}
+     }
 .color-card {
     border: 1px solid #DBD9DB; 
     padding: 1px 20px 20px 20px; 
@@ -833,5 +842,9 @@ mark {
 	color: #000;
 }
 .filterDiv-logo {
-	width: 32%!important;
+	width: 32%;
+}
+.logo-size {
+	width: auto;
+    height: 27px;
 }
