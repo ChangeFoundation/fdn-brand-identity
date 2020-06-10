@@ -14,596 +14,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </head>
 <style>
-*:focus {outline:none !important}
-body{
-    font-family: "Change Calibre", sans-serif;
-    color: #363135;
-    font-size:16px;
-    }
-a {
-    color: #ec2c22;
-    text-decoration: underline;
-    cursor: pointer;
-}
-h6 {
-    font-size: 1rem;
-    font-family: "Change Calibre", sans-serif;
-    line-height: 1.25;
-    margin: 1.5em 0 .25em;
-}
-h1 {
-    font-size: 2.44140625rem;
-    line-height: 1.2288;
-    font-family: "Change Calibre", sans-serif;
-    margin: .3072em 0;
-    font-weight: 700;
-}
-h2 {
-    font-size: 1.953125rem;
-    font-weight: 400;
-    line-height: 1.408;
-    margin: 1.28em 0 .384em;
-    font-family: "Change Calibre", sans-serif;
-}
-h3 {
-    font-size: 1.5625rem;
-    line-height: 1.28;
-    margin: 2.16em 0 .4em;
-    font-family: "Change Calibre", sans-serif;
-    font-weight: 700;
-}
-h4 {
-    font-size: 1.25rem;
-    line-height: 1.2;
-    margin: 2em 0 .4em;
-    font-family: "Change Calibre", sans-serif;
-    font-weight: 700;
-}
-h5 {
-    color: #737273;
-    font-size: 14px;
-    letter-spacing: .144em;
-    line-height: 18px;
-    margin: 1.875em 0 .78125em;
-    text-transform: uppercase;
-    font-family: "Change Calibre", sans-serif;
-    font-weight: 700;
-}
-.w3-half img{
-    margin-bottom:-6px;
-    margin-top:16px;
-    opacity:0.8;
-    cursor:pointer
-    }
-.w3-half img:hover{
-    opacity:1
-    }
-.w3-black {
-    background-color: #0000009c!important;
-    }
-.w3-col {
-    padding: 8px 8px !important;
-}
-.w3-row-padding {
-    padding: 8px 8px !important;
-}
-    .w3-outline {
-    Border: 1px solid #DBD9DB;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #363135;
-    }
-.btn-outline {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 19px;
-    border-radius: 5px;
-    border: 2px solid #DBD9DB;
-    background-color: transparent;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-appearance: initial!important;
-    transition: background .1s ease,border .1s ease;
-    cursor: pointer;
-    height: 44px;
-    color: #363135;
-    margin-bottom: 10px;
-}
-    .btn-outline:active, .btn-outline:hover {
-    border-color: #737273;
-}
-    
-@media screen and (max-width: 600px) {
-  .btn-outline {
-    width: 100%;
-  }
-}
-.select-dropdown {
-    text-decoration: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    line-height: 19px;
-    border-radius: 5px;
-    border: 2px solid #DBD9DB;
-    background-color: transparent;
-    cursor: pointer;
-    width:80%;
-    height: 44px;
-}
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 5px;
-  border: 1px solid #dfdfdf;
-  border-radius: 2px;
-  margin-right: 2rem;
-  padding: 1rem;
-  padding-right: 2rem;
-}
-    .list-bulleted {
-    list-style-type: circle;
-}
-    .symbol-compact {
-    margin: 0;
-}.symbol {
-    font-family: Change Symbols!important;
-    font-weight: 400;
-    font-style: normal;
-    display: inline-block;
-    line-height: inherit;
-    vertical-align: middle;
-    margin-right: .625em;
-    text-decoration: none;
-    text-transform: none!important;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-    .symbol {
-    font-family: Change Symbols!important;
-    font-weight: 400;
-    font-style: normal;
-    display: inline-block;
-    line-height: inherit;
-    vertical-align: middle;
-    margin-right: .625em;
-    text-decoration: none;
-    text-transform: none!important;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-    blockquote {
-    margin: 1.5em 0;
-    border-left: .25rem solid #dbd9db;
-    padding: 0 1.5em;
-}
-    .rule-dashed {
-    border: none;
-    border-bottom: 1px solid #dbd9db;
-    border-bottom-style: dashed!important;
-}
-    .rule-small {
-    border: none;
-    border-bottom: 1px solid #dbd9db;
-}
-    .rule-thick {
-    border: none;
-    border-bottom: 2px solid #dbd9db;
-}
-    .card-container-left {
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	display: flex;
-	max-width: 100%;
-	margin: 20px;
-	overflow: hidden;
-	width: 700px;
-}
-
-.card-preview-left {
-	background-color: #fff;
-	border-right: 1px solid #000;
-	color: #fff;
-	padding: 30px;
-	max-width: 250px;
-}
-
-.card-preview-left a {
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	opacity: 0.6;
-	margin-top: 30px;
-	text-decoration: none;
-}
-
-.card-info-right {
-	padding: 30px;
-	position: relative;
-	width: 100%;
-}
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #CCE5FF; /* whiteblue */
-  color: #2F5494;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  border-radius: 7px
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: #ED2D23;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.alert-attached {
-  padding: 20px 40px;
-  background-color: #CCE5FF;
-  color: #2F5494;
-  margin-bottom: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-.alert-outlined {
-  padding: 20px 40px;
-  background-color: #fff; 
-  border-top: 1px solid #DBD9DB;
-  border-bottom: 1px solid #DBD9DB;
-  border-right: 1px solid #DBD9DB;
-  border-left: 4px solid #F0AD4E;
-  color: #363135;
-  margin-bottom: 15px;
-  border-bottom-right-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 3px
-}
-.badge-primary {
-    background-color: #FFF9DF;
-    color: #B48629;
-    display: inline-block;
-    padding: .25em .4em;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25rem;
-}
-    
-    .modal-open{
-        overflow:hidden
-    }
-    .modal{
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        z-index:1050;
-        display:none;
-        overflow:hidden;
-        -webkit-overflow-scrolling:touch;
-        outline:0
-    }
-    .modal.fade .modal-dialog{
-        -webkit-transform:translate(0,22%);
-        -ms-transform:translate(0,22%);
-        -o-transform:translate(0,22%);
-        transform:translate(0,22%);
-        -webkit-transition:-webkit-transform .3s ease-out;
-        -o-transition:-o-transform .3s ease-out;
-        transition:-webkit-transform .3s ease-out;
-        transition:transform .3s ease-out;
-        transition:transform .3s ease-out,
-            -webkit-transform .3s ease-out,
-            -o-transform .3s ease-out}
-    .modal.in .modal-dialog{
-        -webkit-transform:translate(0,0);
-        -ms-transform:translate(0,0);
-        -o-transform:translate(0,0);
-        transform:translate(0,0)
-    }
-    .modal-open .modal{
-        overflow-x:hidden;
-        overflow-y:auto
-    }
-    .modal-dialog{
-        position:relative;
-        width:auto;
-        margin:10px
-    }
-    .modal-content{
-        position:relative;
-        background-color:#fff;
-        background-clip:padding-box;
-        border:none;
-        border:none;
-        border-radius:6px;
-        -webkit-box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2);
-        box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2);
-        outline:0
-    }
-    .modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color: rgba(157, 155, 156, 0.83)}
-    .modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}
-    .modal-backdrop.in{filter:alpha(opacity=50);opacity:.5}
-    .modal-header{padding:15px;border-bottom:1px solid #e5e5e5}
-    .modal-header .close{margin-top:-2px}
-    .modal-title{margin:0;line-height:1.42857143}
-    .modal-body{position:relative;padding:25px 40px}
-    .modal-footer{border-top:1px solid #e5e5e5;padding:15px;text-align:center;}
-    .modal-footer .btn+.btn{margin-bottom:0;margin-left:5px; margin-right:5px;}
-    .modal-footer .btn-group .btn+.btn{margin-left:-1px}
-    .modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}
-        .modal-content{-webkit-box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2);box-shadow:0px 2px 3px rgba(115, 114, 115, 0.2)}
-        .modal-sm{width:300px}}
-    @media (min-width:992px){
-        .modal-lg {
-            width:900px
-        }
-    }
-    .close{
-        float:right;
-        font-size:22px;
-        font-weight:bold;
-        line-height: 20px;
-        color:#ED2D23;
-/*        filter:alpha(opacity=20);*/
-/*        opacity:.2;*/
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .close:focus,.close:hover{
-        color:#ED2D23;
-        text-decoration:none;
-        cursor:pointer;
-    }
-    button.close{
-        padding:0;
-        cursor:pointer;
-        background:0 0;
-        border:0;
-        -webkit-appearance:none;
-        -moz-appearance:none;
-        appearance:none
-    }
-.col-container {
-    display: table;
-    width: 100%;
-}
-.col {
-    display: table-cell;
-    padding: 16px;
-}
-@media only screen and (max-width: 768px) {
-.mobile-half {
-    width: 50%;
-}
-.footer-copyright {
-    text-align: center!important;
-}
-.w3-row-padding {
-    width: 100%;
-}
-    .sidebar-logo-padding  {
-	padding-top: 60px!important;
-}
-        }
-.color-card {
-    border: 1px solid #DBD9DB; 
-    padding: 1px 20px 20px 20px; 
-    background-color: #fff; 
-    Border-radius: 10px;
-    }
-.header-card {
-/*    border: 1px solid #DBD9DB; */
-    padding: 1px 20px 20px 20px; 
-    background-color: #fff; 
-    Border-radius: 10px;
-    cursor: pointer;
-    height: 190px;
-    transition: .3s ease;
-    border: 1px solid #DBD9DB;
-    }
-.header-card:hover {
-    background-color: #fff; 
-    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.17);
-    transform: translateY(-3px) scale(1);
-}
-.filterDiv {
-  float: left;
-  background-color: #F6F4F6;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container-icons {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn-filter {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-
-.btn-filter:hover {
-  background-color: #ddd;
-}
-
-.btn-filter.active {
-  background-color: #666;
-  color: white;
-}
-
-    
-/*principles grid css*/
-
-.principle-card{
-  padding: 20px;
-  border: 1px solid #DBD9DB;
-  Border-radius: 5px;
-  margin-bottom: 8px;
-}
-
-.row-principles {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column-principles {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  max-width:50%;
-  padding: 0 4px;
-}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column-principles {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column-principles {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-  .header-card {
-    height: auto;
-    }
-}
-    
-/*Tooltip css*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-/*  border-bottom: 1px dotted black;*/
-  border-bottom: none;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: rgba(54,49,53,.98);
-  color: #fff;
-  text-align: left;
-  border-radius: 5px;
-  padding: .5em 1em;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-  font-size: .8rem;
-  line-height: normal;
-  font-weight: 300;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 20%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(54,49,53,.98) transparent transparent transparent;
-  transition: opacity .2s ease-out;
-  z-index: 4;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-    
-.chart-column {
-  border: 1px solid #DBD9DB;
-  border-radius: 5px;
-}
-.chart-column-title  {
-  color: #363135!important;
-  background-color: #F6F4F6!important;
-  padding-top: 32px!important;
-  padding-bottom: 32px!important;
-}
-mark {
-  background-color: #ED2D23;
-    color: #fff;
-    padding: 0 10px;
-    border-radius: 5px
-}
-.section-divider {
-		border-bottom: 1px solid #FFF;
-		background-color: #ED2D23;
-		height: 2px;
-		margin: 0.5em 0px 1.5em;
-}
-    .sub-btn-menu {
-		text-decoration: none;
-        cursor: pointer;
-        font-size: 14px;
-        list-style-type: circle;
-}
-    .sub-btn-menu:hover {
-		text-decoration: underline;
-        cursor: pointer;
-}
-.sidebar-logo-padding  {
-	padding-top: 10px;
-    padding-bottom: 50px!important;
-}
 
 </style>
 <body>
@@ -621,6 +31,7 @@ mark {
       <ul><a href="#dna"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Our DNA.</li></a></ul>
       <ul><a href="#principles"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Our principles.</li></a></ul>
     <a href="#logo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Logo &amp; Design</a> 
+      <ul><a href="#use-logo"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>How to use the logo.</li></a></ul>      
       <ul><a href="#download-logo"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Logos.</li></a></ul>
       <ul><a href="#color"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Colors.</li></a></ul>
       <ul><a href="#icons"  class="sub-btn-menu" style="font-weight: 100; color: #fff!important;"><li>Download Icons.</li></a></ul>
@@ -649,9 +60,6 @@ mark {
 <div class="w3-container" style="border-radius: 10px; background-color: #fff; margin-top: 30px !important; border: 1px solid #DBD9DB;">
 <div class="w3-half">
     <h1 class="w3-jumbo" style="padding: 10% 5% 1%;"><b>Change.org Foundation's Brand Guidelines.</b></h1><p style="padding: 1% 5% 10%;">These guidelines provide you with everything you need to create materials for the Change.org Foundation brand.</p>
-<!--    <span class="symbol symbol-facebook symbol-xxl symbol-compact"></span>
-    <span class="symbol symbol-linked-in-alt symbol-xxl symbol-compact"></span>
-    <span class="symbol symbol-twitter symbol-xxl symbol-compact"></span>-->
 </div>
     <div class="w3-half" style="text-align: center;">
   <img src="img/header-animation.gif" style="width: 60%; opacity: 1!important;cursor: auto !important; padding-top: 15px" alt="">
@@ -869,8 +277,99 @@ mark {
   </div>
               <!-- button download logo files -->
 <div class="w3-container" style="margin-top:20px">
-    <a href="img/Country-logos.zip" download="Country-logos.zip"><button type="button" class="btn-outline">Download Foundation logo files&nbsp;<span class="symbol symbol-download symbol-compact"></span></button></a>
+    <a href="img/Country-logos.zip" download="Country-logos.zip"><button type="button" class="btn-outline">Download all Foundation logo files here&nbsp;<span class="symbol symbol-download symbol-compact"></span></button></a>
     </div>
+          
+          
+          <!--     brand icons directory    -->
+    <div class="w3-container" style="margin-top:20px" id="filterbuttoncontainer">
+  <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn-filter" onclick="filterSelection('global')">Global</button>
+  <button class="btn-filter" onclick="filterSelection('asia')"> Asia</button>
+  <button class="btn-filter" onclick="filterSelection('latam')">LatAm</button>
+  <button class="btn-filter" onclick="filterSelection('europe')"> Eurasia</button>
+
+</div>
+
+<div class="w3-container container-icons">
+        <div class="filterDiv filterDiv-logo global">
+    <a href="img/logo/Foundation.zip" download="logos.zip">
+        <img src="img/logo/Foundation/logo-fdn.png" style="width:70%" alt=""> 
+    </a>
+  </div>
+                <div class="filterDiv filterDiv-logo global">
+        <a href="img/logo/Regional/Africa.zip" download="logos.zip">
+        <img src="img/logo/Regional/Africa/logo-africa.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+    <div class="filterDiv filterDiv-logo global asia">
+        <a href="img/logo/Regional/Asia.zip" download="logos.zip">
+        <img src="img/logo/Regional/Asia/logo-asia.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+    <div class="filterDiv filterDiv-logo global latam">
+        <a href="img/logo/Regional/LatAm.zip" download="logos.zip">
+        <img src="img/logo/Regional/LatAm/logo-latam.png" style="width:70%; " alt=""> 
+    </a>
+    </div> 
+        <div class="filterDiv filterDiv-logo latam">
+        <a href="img/logo/Argentina.zip" download="logos.zip">
+        <img src="img/logo/Argentina/logo-argentina.png" style="width:70%" alt=""> 
+    </a>
+    </div>
+        <div class="filterDiv filterDiv-logo latam">    
+      <a href="img/logo/Brazil.zip" download="logos.zip">
+        <img src="img/logo/Brazil/logo-brazil.png" style="width:70%" alt=""> 
+    </a>
+    </div>
+        <div class="filterDiv filterDiv-logo latam">
+        <a href="img/logo/Chile.zip" download="logos.zip">
+        <img src="img/logo/Chile/logo-chile.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo latam">
+        <a href="img/logo/Colombia.zip" download="logos.zip">
+        <img src="img/logo/Colombia/logo-colombia.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo europe">
+        <a href="img/logo/Germany.zip" download="logos.zip">
+        <img src="img/logo/Germany/logo-germany.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo asia">
+        <a href="img/logo/India.zip" download="logos.zip">
+        <img src="img/logo/India/logo-india.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo asia">
+        <a href="img/logo/Indonesia.zip" download="logos.zip">
+        <img src="img/logo/Indonesia/logo-indonesia.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo asia">
+        <a href="img/logo/Japan.zip" download="logos.zip">
+        <img src="img/logo/Japan/logo-japan.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo latam">
+        <a href="img/logo/Mexico.zip" download="logos.zip">
+        <img src="img/logo/Mexico/logo-mexico.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo asia">
+        <a href="img/logo/Thailand.zip" download="logos.zip">
+        <img src="img/logo/Thailand/logo-thailand.png" style="width:70%; " alt=""> 
+    </a>
+    </div>  
+            <div class="filterDiv filterDiv-logo europe">
+        <a href="img/logo/Turkey.zip" download="logos.zip">
+        <img src="img/logo/Turkey/logo-turkey.png" style="width:70%; " alt=""> 
+    </a>
+    </div>   
+</div>
+          
+          
 
 
           
@@ -1068,7 +567,7 @@ mark {
             <div class="w3-container" style="margin-top:20px">
     <a href="img/Icons.zip" download="Foundation-Icons" target="_blank"><button type="button" class="btn-outline">Download the icons repository&nbsp;<span class="symbol symbol-download symbol-compact"></span></button></a>
   </div>
-<!--     brand sustainability campaigns users components-->
+<!--     brand icons directory    -->
     <div class="w3-container" style="margin-top:20px" id="filterbuttoncontainer">
   <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn-filter" onclick="filterSelection('brand')"> Brand</button>
@@ -1564,8 +1063,16 @@ mark {
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right footer-copyright">Change.org Foundation © 2020</p></div>
+<!-- footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <div>
+    <p class="footer-social-icons footer-copyright">
+    <a href="https://www.linkedin.com/company/change-org-foundation/" target="_blank"><span class="symbol symbol-linked-in-alt symbol-xxl symbol-compact" style="color: #737273"></span></a>
+    <a href="https://twitter.com/changeorgfound" target="_blank"><span class="symbol symbol-twitter symbol-xxl symbol-compact" style="color: #737273"></span></a>
+    </p></div>
+    <div>
+    <p class="w3-right footer-copyright">Change.org Foundation © 2020</p></div>
+    </div>
 
 <script>
 // Script to open and close sidebar
