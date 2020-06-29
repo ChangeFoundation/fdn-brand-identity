@@ -1122,6 +1122,12 @@ function onClick(element) {
 }
 
 // country users number dropdown
+// update metrics from here_
+// users: https://redash.staging.changeeng.org/dashboard/foundation-health-indicators?p_country=Global%20Foundation&p_display=Yes&p_Timeframe=Week&p_Source=All%20non-carousel%20signatures&p_splitsource=Yes
+// Signatures: https://redash.staging.changeeng.org/queries/5667?p_Date%20range=%5Bobject%20Object%5D&p_Date%20range.start=2020-01-01&p_Date%20range.end=2020-06-29#8797
+// Victories: https://redash.staging.changeeng.org/queries/5668?p_Date%20range=%5Bobject%20Object%5D&p_Date%20range.start=2020-01-01&p_Date%20range.end=2020-06-29#8798
+// Responses: https://redash.staging.changeeng.org/queries/5669#8799
+
     function changeSelect() {
     if (document.getElementById("dropBox").value == "1") {
         document.getElementById("divText").innerHTML = "<table style=\"height: auto; border: none; margin-top: 10px; margin-bottom: 10px; border-spacing: 10px;\" width=\"100%\"><tbody><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Users</h4><span style=\"font-size: 12px\">Updated Jun 2020</span><p style=\"font-size: 18px; color: #ED2D23; font-weight: bold\">131,812,659</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Signatures</h4><span style=\"font-size: 12px\">From Jan to Jun 2020</span><p style=\"font-size: 18px; color: #ED2D23; font-weight: bold\">150,153,108</p></td></tr><tr><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Victories</h4><span style=\"font-size: 12px\">From Jan to Jun 2020</span><p style=\"font-size: 18px; color: #ED2D23; font-weight: bold\">1,979</p></td><td style=\"width: 50%; padding: 10px; border: 1px solid #DBD9DB; text-align: center;\"><h4>Responses</h4><span style=\"font-size: 12px\">Petitions w/ responses</span><p style=\"font-size: 18px; color: #ED2D23; font-weight: bold\">732</p></td></tr></tbody></table>";
